@@ -1,0 +1,3724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://wsdl.intf.dcm.intel.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="Dcm" targetNamespace="http://wsdl.intf.dcm.intel.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="Dcm.DcmPort?xsd=Dcm_schema1.xsd" namespace="http://wsdl.intf.dcm.intel.com/" />
+    </xsd:schema>
+  </types>
+  <message name="getPhysicalParentResponse">
+    <part name="parameters" element="tns:getPhysicalParentResponse" />
+  </message>
+  <message name="getPolicyHistory">
+    <part name="parameters" element="tns:getPolicyHistory" />
+  </message>
+  <message name="analyzeCoolingStatusResponse">
+    <part name="parameters" element="tns:analyzeCoolingStatusResponse" />
+  </message>
+  <message name="getLoadfactorsResponse">
+    <part name="parameters" element="tns:getLoadfactorsResponse" />
+  </message>
+  <message name="rankServersForMigration">
+    <part name="parameters" element="tns:rankServersForMigration" />
+  </message>
+  <message name="schedulePolicy">
+    <part name="parameters" element="tns:schedulePolicy" />
+  </message>
+  <message name="getOverCoolingIndicatorResponse">
+    <part name="parameters" element="tns:getOverCoolingIndicatorResponse" />
+  </message>
+  <message name="enumerateEntities">
+    <part name="parameters" element="tns:enumerateEntities" />
+  </message>
+  <message name="getCollectionStateResponse">
+    <part name="parameters" element="tns:getCollectionStateResponse" />
+  </message>
+  <message name="getNotificationDataResponse">
+    <part name="parameters" element="tns:getNotificationDataResponse" />
+  </message>
+  <message name="updatePerformanceFeedback">
+    <part name="parameters" element="tns:updatePerformanceFeedback" />
+  </message>
+  <message name="getPredefinedEventTypes">
+    <part name="parameters" element="tns:getPredefinedEventTypes" />
+  </message>
+  <message name="setEntityProperties">
+    <part name="parameters" element="tns:setEntityProperties" />
+  </message>
+  <message name="resetActiveIdlePowerEstimationResponse">
+    <part name="parameters" element="tns:resetActiveIdlePowerEstimationResponse" />
+  </message>
+  <message name="pullHierarchyResponse">
+    <part name="parameters" element="tns:pullHierarchyResponse" />
+  </message>
+  <message name="rediscoverNodeCapabilities">
+    <part name="parameters" element="tns:rediscoverNodeCapabilities" />
+  </message>
+  <message name="getPolicyDataResponse">
+    <part name="parameters" element="tns:getPolicyDataResponse" />
+  </message>
+  <message name="getWorkloadPatternResponse">
+    <part name="parameters" element="tns:getWorkloadPatternResponse" />
+  </message>
+  <message name="getEntityPropertyResponse">
+    <part name="parameters" element="tns:getEntityPropertyResponse" />
+  </message>
+  <message name="getActiveIdlePowerEstimation">
+    <part name="parameters" element="tns:getActiveIdlePowerEstimation" />
+  </message>
+  <message name="updateNotificationResponse">
+    <part name="parameters" element="tns:updateNotificationResponse" />
+  </message>
+  <message name="addPowerModel">
+    <part name="parameters" element="tns:addPowerModel" />
+  </message>
+  <message name="evaluateServerForMigrationResponse">
+    <part name="parameters" element="tns:evaluateServerForMigrationResponse" />
+  </message>
+  <message name="getActiveIdlePowerEstimationResponse">
+    <part name="parameters" element="tns:getActiveIdlePowerEstimationResponse" />
+  </message>
+  <message name="rankServersForWorkload">
+    <part name="parameters" element="tns:rankServersForWorkload" />
+  </message>
+  <message name="getLoadfactors">
+    <part name="parameters" element="tns:getLoadfactors" />
+  </message>
+  <message name="getCoolingIndicatorResponse">
+    <part name="parameters" element="tns:getCoolingIndicatorResponse" />
+  </message>
+  <message name="disassociateEntityResponse">
+    <part name="parameters" element="tns:disassociateEntityResponse" />
+  </message>
+  <message name="enumeratePowerModelsResponse">
+    <part name="parameters" element="tns:enumeratePowerModelsResponse" />
+  </message>
+  <message name="removeStorageDevicePowerProfileResponse">
+    <part name="parameters" element="tns:removeStorageDevicePowerProfileResponse" />
+  </message>
+  <message name="getBatchQueryData">
+    <part name="parameters" element="tns:getBatchQueryData" />
+  </message>
+  <message name="getVersionResponse">
+    <part name="parameters" element="tns:getVersionResponse" />
+  </message>
+  <message name="getSELInText">
+    <part name="parameters" element="tns:getSELInText" />
+  </message>
+  <message name="getPolicyData">
+    <part name="parameters" element="tns:getPolicyData" />
+  </message>
+  <message name="unsubscribeEventHandler">
+    <part name="parameters" element="tns:unsubscribeEventHandler" />
+  </message>
+  <message name="analyzeCoolingStatus">
+    <part name="parameters" element="tns:analyzeCoolingStatus" />
+  </message>
+  <message name="setLoadfactors">
+    <part name="parameters" element="tns:setLoadfactors" />
+  </message>
+  <message name="stopPowerSavingResponse">
+    <part name="parameters" element="tns:stopPowerSavingResponse" />
+  </message>
+  <message name="getLatestQueryData">
+    <part name="parameters" element="tns:getLatestQueryData" />
+  </message>
+  <message name="powerOffOutlet">
+    <part name="parameters" element="tns:powerOffOutlet" />
+  </message>
+  <message name="setCollectionStateResponse">
+    <part name="parameters" element="tns:setCollectionStateResponse" />
+  </message>
+  <message name="getCollectionState">
+    <part name="parameters" element="tns:getCollectionState" />
+  </message>
+  <message name="deleteSecretKey">
+    <part name="parameters" element="tns:deleteSecretKey" />
+  </message>
+  <message name="getSystemTimeResponse">
+    <part name="parameters" element="tns:getSystemTimeResponse" />
+  </message>
+  <message name="resetObservedMaxPower">
+    <part name="parameters" element="tns:resetObservedMaxPower" />
+  </message>
+  <message name="discoverEntitiesResponse">
+    <part name="parameters" element="tns:discoverEntitiesResponse" />
+  </message>
+  <message name="getOverCoolingIndicator">
+    <part name="parameters" element="tns:getOverCoolingIndicator" />
+  </message>
+  <message name="identifyEntityResponse">
+    <part name="parameters" element="tns:identifyEntityResponse" />
+  </message>
+  <message name="getMetricData">
+    <part name="parameters" element="tns:getMetricData" />
+  </message>
+  <message name="enumerateEntitiesWithDetailsRecursivelyResponse">
+    <part name="parameters" element="tns:enumerateEntitiesWithDetailsRecursivelyResponse" />
+  </message>
+  <message name="findEntitiesWithDetails">
+    <part name="parameters" element="tns:findEntitiesWithDetails" />
+  </message>
+  <message name="executeCommandResponse">
+    <part name="parameters" element="tns:executeCommandResponse" />
+  </message>
+  <message name="getPSUPowerResponse">
+    <part name="parameters" element="tns:getPSUPowerResponse" />
+  </message>
+  <message name="enumerateNetworkDevicePowerProfilesResponse">
+    <part name="parameters" element="tns:enumerateNetworkDevicePowerProfilesResponse" />
+  </message>
+  <message name="getServerComponentTemperatureHealthStatus">
+    <part name="parameters" element="tns:getServerComponentTemperatureHealthStatus" />
+  </message>
+  <message name="getSensorDataResponse">
+    <part name="parameters" element="tns:getSensorDataResponse" />
+  </message>
+  <message name="submitSecretKeyResponse">
+    <part name="parameters" element="tns:submitSecretKeyResponse" />
+  </message>
+  <message name="powerOffServerWithCredential">
+    <part name="parameters" element="tns:powerOffServerWithCredential" />
+  </message>
+  <message name="updateStorageDevicePowerProfileResponse">
+    <part name="parameters" element="tns:updateStorageDevicePowerProfileResponse" />
+  </message>
+  <message name="getGlobalPropertyResponse">
+    <part name="parameters" element="tns:getGlobalPropertyResponse" />
+  </message>
+  <message name="isPolicyActiveResponse">
+    <part name="parameters" element="tns:isPolicyActiveResponse" />
+  </message>
+  <message name="powerCycleServerWithCredentialResponse">
+    <part name="parameters" element="tns:powerCycleServerWithCredentialResponse" />
+  </message>
+  <message name="powerOnResponse">
+    <part name="parameters" element="tns:powerOnResponse" />
+  </message>
+  <message name="getEnclosureAndBladeInfo">
+    <part name="parameters" element="tns:getEnclosureAndBladeInfo" />
+  </message>
+  <message name="removeServerPowerProfileResponse">
+    <part name="parameters" element="tns:removeServerPowerProfileResponse" />
+  </message>
+  <message name="removeStorageDevicePowerProfile">
+    <part name="parameters" element="tns:removeStorageDevicePowerProfile" />
+  </message>
+  <message name="getGlobalProperty">
+    <part name="parameters" element="tns:getGlobalProperty" />
+  </message>
+  <message name="getQueryDataResponse">
+    <part name="parameters" element="tns:getQueryDataResponse" />
+  </message>
+  <message name="resetServerWithCredential">
+    <part name="parameters" element="tns:resetServerWithCredential" />
+  </message>
+  <message name="detectEntities">
+    <part name="parameters" element="tns:detectEntities" />
+  </message>
+  <message name="enumerateEntitiesWithDetails">
+    <part name="parameters" element="tns:enumerateEntitiesWithDetails" />
+  </message>
+  <message name="setEventState">
+    <part name="parameters" element="tns:setEventState" />
+  </message>
+  <message name="stopCollectingPowerDistributionResponse">
+    <part name="parameters" element="tns:stopCollectingPowerDistributionResponse" />
+  </message>
+  <message name="setPolicyStateHastilyResponse">
+    <part name="parameters" element="tns:setPolicyStateHastilyResponse" />
+  </message>
+  <message name="importHierarchy">
+    <part name="parameters" element="tns:importHierarchy" />
+  </message>
+  <message name="addNetworkDevicePowerProfileResponse">
+    <part name="parameters" element="tns:addNetworkDevicePowerProfileResponse" />
+  </message>
+  <message name="removeNetworkDevicePowerProfile">
+    <part name="parameters" element="tns:removeNetworkDevicePowerProfile" />
+  </message>
+  <message name="getLatestMetricDataResponse">
+    <part name="parameters" element="tns:getLatestMetricDataResponse" />
+  </message>
+  <message name="exportHierarchyResponse">
+    <part name="parameters" element="tns:exportHierarchyResponse" />
+  </message>
+  <message name="getRealTimePduData">
+    <part name="parameters" element="tns:getRealTimePduData" />
+  </message>
+  <message name="clearNodePoliciesResponse">
+    <part name="parameters" element="tns:clearNodePoliciesResponse" />
+  </message>
+  <message name="discoverEntities">
+    <part name="parameters" element="tns:discoverEntities" />
+  </message>
+  <message name="powerOnServerWithCredential">
+    <part name="parameters" element="tns:powerOnServerWithCredential" />
+  </message>
+  <message name="getQueryData">
+    <part name="parameters" element="tns:getQueryData" />
+  </message>
+  <message name="identifyEntity">
+    <part name="parameters" element="tns:identifyEntity" />
+  </message>
+  <message name="removeNotificationResponse">
+    <part name="parameters" element="tns:removeNotificationResponse" />
+  </message>
+  <message name="powerOnServerResponse">
+    <part name="parameters" element="tns:powerOnServerResponse" />
+  </message>
+  <message name="getOutletStateResponse">
+    <part name="parameters" element="tns:getOutletStateResponse" />
+  </message>
+  <message name="disassociateEntity">
+    <part name="parameters" element="tns:disassociateEntity" />
+  </message>
+  <message name="getVersion">
+    <part name="parameters" element="tns:getVersion" />
+  </message>
+  <message name="evaluateLowUtilizationServer">
+    <part name="parameters" element="tns:evaluateLowUtilizationServer" />
+  </message>
+  <message name="getPSUPower">
+    <part name="parameters" element="tns:getPSUPower" />
+  </message>
+  <message name="enumerateStorageDevicePowerProfilesResponse">
+    <part name="parameters" element="tns:enumerateStorageDevicePowerProfilesResponse" />
+  </message>
+  <message name="dumpMetricDataResponse">
+    <part name="parameters" element="tns:dumpMetricDataResponse" />
+  </message>
+  <message name="getMetricDataResponse">
+    <part name="parameters" element="tns:getMetricDataResponse" />
+  </message>
+  <message name="setGlobalPropertyResponse">
+    <part name="parameters" element="tns:setGlobalPropertyResponse" />
+  </message>
+  <message name="subscribeEventHandler">
+    <part name="parameters" element="tns:subscribeEventHandler" />
+  </message>
+  <message name="powerOffServer">
+    <part name="parameters" element="tns:powerOffServer" />
+  </message>
+  <message name="powerCycleServerWithCredential">
+    <part name="parameters" element="tns:powerCycleServerWithCredential" />
+  </message>
+  <message name="addStorageDevicePowerProfile">
+    <part name="parameters" element="tns:addStorageDevicePowerProfile" />
+  </message>
+  <message name="updateWorkloadIntensityResponse">
+    <part name="parameters" element="tns:updateWorkloadIntensityResponse" />
+  </message>
+  <message name="getPolicyDataExResponse">
+    <part name="parameters" element="tns:getPolicyDataExResponse" />
+  </message>
+  <message name="getPECBladeInfo">
+    <part name="parameters" element="tns:getPECBladeInfo" />
+  </message>
+  <message name="getQueryAggregationPeriodListResponse">
+    <part name="parameters" element="tns:getQueryAggregationPeriodListResponse" />
+  </message>
+  <message name="unsubscribePredefinedEvent">
+    <part name="parameters" element="tns:unsubscribePredefinedEvent" />
+  </message>
+  <message name="addPowerModelResponse">
+    <part name="parameters" element="tns:addPowerModelResponse" />
+  </message>
+  <message name="getEventState">
+    <part name="parameters" element="tns:getEventState" />
+  </message>
+  <message name="setNotificationState">
+    <part name="parameters" element="tns:setNotificationState" />
+  </message>
+  <message name="setEventStateResponse">
+    <part name="parameters" element="tns:setEventStateResponse" />
+  </message>
+  <message name="getSensorData">
+    <part name="parameters" element="tns:getSensorData" />
+  </message>
+  <message name="getLatestQueryDataResponse">
+    <part name="parameters" element="tns:getLatestQueryDataResponse" />
+  </message>
+  <message name="getPolicyHistoryResponse">
+    <part name="parameters" element="tns:getPolicyHistoryResponse" />
+  </message>
+  <message name="getPowerDistribution">
+    <part name="parameters" element="tns:getPowerDistribution" />
+  </message>
+  <message name="reconnectEntity">
+    <part name="parameters" element="tns:reconnectEntity" />
+  </message>
+  <message name="resetActiveIdlePowerEstimation">
+    <part name="parameters" element="tns:resetActiveIdlePowerEstimation" />
+  </message>
+  <message name="maintainDBResponse">
+    <part name="parameters" element="tns:maintainDBResponse" />
+  </message>
+  <message name="setLocationInfo">
+    <part name="parameters" element="tns:setLocationInfo" />
+  </message>
+  <message name="updateServerPowerProfile">
+    <part name="parameters" element="tns:updateServerPowerProfile" />
+  </message>
+  <message name="getRealTimeSensorData">
+    <part name="parameters" element="tns:getRealTimeSensorData" />
+  </message>
+  <message name="getRealTimeComponentFaults">
+    <part name="parameters" element="tns:getRealTimeComponentFaults" />
+  </message>
+  <message name="getEntityProperty">
+    <part name="parameters" element="tns:getEntityProperty" />
+  </message>
+  <message name="powerOffOutletResponse">
+    <part name="parameters" element="tns:powerOffOutletResponse" />
+  </message>
+  <message name="findEntitiesWithDetailsResponse">
+    <part name="parameters" element="tns:findEntitiesWithDetailsResponse" />
+  </message>
+  <message name="addEntity">
+    <part name="parameters" element="tns:addEntity" />
+  </message>
+  <message name="getRealTimeSensorDataResponse">
+    <part name="parameters" element="tns:getRealTimeSensorDataResponse" />
+  </message>
+  <message name="dumpMeasurementDataResponse">
+    <part name="parameters" element="tns:dumpMeasurementDataResponse" />
+  </message>
+  <message name="removePowerModel">
+    <part name="parameters" element="tns:removePowerModel" />
+  </message>
+  <message name="getRealTimeUpsDataResponse">
+    <part name="parameters" element="tns:getRealTimeUpsDataResponse" />
+  </message>
+  <message name="stopCollectingPowerDistribution">
+    <part name="parameters" element="tns:stopCollectingPowerDistribution" />
+  </message>
+  <message name="getNextRawDataResponse">
+    <part name="parameters" element="tns:getNextRawDataResponse" />
+  </message>
+  <message name="disableCoreResponse">
+    <part name="parameters" element="tns:disableCoreResponse" />
+  </message>
+  <message name="addNetworkDevicePowerProfile">
+    <part name="parameters" element="tns:addNetworkDevicePowerProfile" />
+  </message>
+  <message name="findEntitiesResponse">
+    <part name="parameters" element="tns:findEntitiesResponse" />
+  </message>
+  <message name="getQueryAggregationPeriodList">
+    <part name="parameters" element="tns:getQueryAggregationPeriodList" />
+  </message>
+  <message name="enumerateCustomEvents">
+    <part name="parameters" element="tns:enumerateCustomEvents" />
+  </message>
+  <message name="evaluateLowUtilizationServerResponse">
+    <part name="parameters" element="tns:evaluateLowUtilizationServerResponse" />
+  </message>
+  <message name="identifyEntityByProtocolResponse">
+    <part name="parameters" element="tns:identifyEntityByProtocolResponse" />
+  </message>
+  <message name="getObservedMaxPowerResponse">
+    <part name="parameters" element="tns:getObservedMaxPowerResponse" />
+  </message>
+  <message name="setPolicyStateHastily">
+    <part name="parameters" element="tns:setPolicyStateHastily" />
+  </message>
+  <message name="rankServersForWorkloadResponse">
+    <part name="parameters" element="tns:rankServersForWorkloadResponse" />
+  </message>
+  <message name="enumerateNetworkDevicePowerProfiles">
+    <part name="parameters" element="tns:enumerateNetworkDevicePowerProfiles" />
+  </message>
+  <message name="enumerateCustomEventsResponse">
+    <part name="parameters" element="tns:enumerateCustomEventsResponse" />
+  </message>
+  <message name="predictPowerResponse">
+    <part name="parameters" element="tns:predictPowerResponse" />
+  </message>
+  <message name="startPowerSaving">
+    <part name="parameters" element="tns:startPowerSaving" />
+  </message>
+  <message name="getNextDataResponse">
+    <part name="parameters" element="tns:getNextDataResponse" />
+  </message>
+  <message name="getMultipleLatestMetricDataResponse">
+    <part name="parameters" element="tns:getMultipleLatestMetricDataResponse" />
+  </message>
+  <message name="setPolicyState">
+    <part name="parameters" element="tns:setPolicyState" />
+  </message>
+  <message name="detectEntitiesResponse">
+    <part name="parameters" element="tns:detectEntitiesResponse" />
+  </message>
+  <message name="setCollectionState">
+    <part name="parameters" element="tns:setCollectionState" />
+  </message>
+  <message name="updateServerPowerProfileResponse">
+    <part name="parameters" element="tns:updateServerPowerProfileResponse" />
+  </message>
+  <message name="startPowerSavingResponse">
+    <part name="parameters" element="tns:startPowerSavingResponse" />
+  </message>
+  <message name="getStaticCUPSData">
+    <part name="parameters" element="tns:getStaticCUPSData" />
+  </message>
+  <message name="associateEntityResponse">
+    <part name="parameters" element="tns:associateEntityResponse" />
+  </message>
+  <message name="schedulePolicyResponse">
+    <part name="parameters" element="tns:schedulePolicyResponse" />
+  </message>
+  <message name="deleteSecretKeyResponse">
+    <part name="parameters" element="tns:deleteSecretKeyResponse" />
+  </message>
+  <message name="enumeratePoliciesResponse">
+    <part name="parameters" element="tns:enumeratePoliciesResponse" />
+  </message>
+  <message name="getTemperatureRise">
+    <part name="parameters" element="tns:getTemperatureRise" />
+  </message>
+  <message name="getNextData">
+    <part name="parameters" element="tns:getNextData" />
+  </message>
+  <message name="getMultipleLatestMetricData">
+    <part name="parameters" element="tns:getMultipleLatestMetricData" />
+  </message>
+  <message name="disableCore">
+    <part name="parameters" element="tns:disableCore" />
+  </message>
+  <message name="unsubscribePredefinedEventResponse">
+    <part name="parameters" element="tns:unsubscribePredefinedEventResponse" />
+  </message>
+  <message name="updatePolicyExResponse">
+    <part name="parameters" element="tns:updatePolicyExResponse" />
+  </message>
+  <message name="launchPTU">
+    <part name="parameters" element="tns:launchPTU" />
+  </message>
+  <message name="getRealTimeComponentFaultsResponse">
+    <part name="parameters" element="tns:getRealTimeComponentFaultsResponse" />
+  </message>
+  <message name="setPolicyStateResponse">
+    <part name="parameters" element="tns:setPolicyStateResponse" />
+  </message>
+  <message name="rediscoverEntity">
+    <part name="parameters" element="tns:rediscoverEntity" />
+  </message>
+  <message name="getActionLogRecords">
+    <part name="parameters" element="tns:getActionLogRecords" />
+  </message>
+  <message name="powerOnServerWithCredentialResponse">
+    <part name="parameters" element="tns:powerOnServerWithCredentialResponse" />
+  </message>
+  <message name="getConnectorList">
+    <part name="parameters" element="tns:getConnectorList" />
+  </message>
+  <message name="defineNotificationResponse">
+    <part name="parameters" element="tns:defineNotificationResponse" />
+  </message>
+  <message name="findEntities">
+    <part name="parameters" element="tns:findEntities" />
+  </message>
+  <message name="powerOnOutletResponse">
+    <part name="parameters" element="tns:powerOnOutletResponse" />
+  </message>
+  <message name="getPhysicalParent">
+    <part name="parameters" element="tns:getPhysicalParent" />
+  </message>
+  <message name="setLocationInfoResponse">
+    <part name="parameters" element="tns:setLocationInfoResponse" />
+  </message>
+  <message name="Exception">
+    <part name="fault" element="tns:Exception" />
+  </message>
+  <message name="enumerateEntitiesRecursivelyResponse">
+    <part name="parameters" element="tns:enumerateEntitiesRecursivelyResponse" />
+  </message>
+  <message name="updatePolicyExHastily">
+    <part name="parameters" element="tns:updatePolicyExHastily" />
+  </message>
+  <message name="updateNetworkDevicePowerProfile">
+    <part name="parameters" element="tns:updateNetworkDevicePowerProfile" />
+  </message>
+  <message name="rankServersForMigrationResponse">
+    <part name="parameters" element="tns:rankServersForMigrationResponse" />
+  </message>
+  <message name="getEventHandlerResponse">
+    <part name="parameters" element="tns:getEventHandlerResponse" />
+  </message>
+  <message name="getPredefinedEventTypesResponse">
+    <part name="parameters" element="tns:getPredefinedEventTypesResponse" />
+  </message>
+  <message name="evaluateServerForMigration">
+    <part name="parameters" element="tns:evaluateServerForMigration" />
+  </message>
+  <message name="setPolicyResponse">
+    <part name="parameters" element="tns:setPolicyResponse" />
+  </message>
+  <message name="removeNotification">
+    <part name="parameters" element="tns:removeNotification" />
+  </message>
+  <message name="getImmediateLogicalPredecessorsResponse">
+    <part name="parameters" element="tns:getImmediateLogicalPredecessorsResponse" />
+  </message>
+  <message name="updatePerformanceFeedbackResponse">
+    <part name="parameters" element="tns:updatePerformanceFeedbackResponse" />
+  </message>
+  <message name="enumerateEntitiesRecursively">
+    <part name="parameters" element="tns:enumerateEntitiesRecursively" />
+  </message>
+  <message name="addEntityResponse">
+    <part name="parameters" element="tns:addEntityResponse" />
+  </message>
+  <message name="removePolicyHastilyResponse">
+    <part name="parameters" element="tns:removePolicyHastilyResponse" />
+  </message>
+  <message name="getBatchMetricData">
+    <part name="parameters" element="tns:getBatchMetricData" />
+  </message>
+  <message name="subscribePredefinedEvent">
+    <part name="parameters" element="tns:subscribePredefinedEvent" />
+  </message>
+  <message name="updatePolicy">
+    <part name="parameters" element="tns:updatePolicy" />
+  </message>
+  <message name="getEntityProperties">
+    <part name="parameters" element="tns:getEntityProperties" />
+  </message>
+  <message name="removePowerModelResponse">
+    <part name="parameters" element="tns:removePowerModelResponse" />
+  </message>
+  <message name="removeCustomEvent">
+    <part name="parameters" element="tns:removeCustomEvent" />
+  </message>
+  <message name="powerOnServer">
+    <part name="parameters" element="tns:powerOnServer" />
+  </message>
+  <message name="rediscoverNodeCapabilitiesResponse">
+    <part name="parameters" element="tns:rediscoverNodeCapabilitiesResponse" />
+  </message>
+  <message name="clearNodePolicies">
+    <part name="parameters" element="tns:clearNodePolicies" />
+  </message>
+  <message name="getBatchMetricDataResponse">
+    <part name="parameters" element="tns:getBatchMetricDataResponse" />
+  </message>
+  <message name="identifyEntityByProtocol">
+    <part name="parameters" element="tns:identifyEntityByProtocol" />
+  </message>
+  <message name="updatePolicyExHastilyResponse">
+    <part name="parameters" element="tns:updatePolicyExHastilyResponse" />
+  </message>
+  <message name="updateNotification">
+    <part name="parameters" element="tns:updateNotification" />
+  </message>
+  <message name="setNotificationStateResponse">
+    <part name="parameters" element="tns:setNotificationStateResponse" />
+  </message>
+  <message name="associateInbandNodeResponse">
+    <part name="parameters" element="tns:associateInbandNodeResponse" />
+  </message>
+  <message name="maintainDB">
+    <part name="parameters" element="tns:maintainDB" />
+  </message>
+  <message name="stopPowerSaving">
+    <part name="parameters" element="tns:stopPowerSaving" />
+  </message>
+  <message name="setEntityPropertiesResponse">
+    <part name="parameters" element="tns:setEntityPropertiesResponse" />
+  </message>
+  <message name="removeNetworkDevicePowerProfileResponse">
+    <part name="parameters" element="tns:removeNetworkDevicePowerProfileResponse" />
+  </message>
+  <message name="rediscoverEntityResponse">
+    <part name="parameters" element="tns:rediscoverEntityResponse" />
+  </message>
+  <message name="updateStorageDevicePowerProfile">
+    <part name="parameters" element="tns:updateStorageDevicePowerProfile" />
+  </message>
+  <message name="executeCommand">
+    <part name="parameters" element="tns:executeCommand" />
+  </message>
+  <message name="getUnreachableEntitiesResponse">
+    <part name="parameters" element="tns:getUnreachableEntitiesResponse" />
+  </message>
+  <message name="evaluateServerForWorkload">
+    <part name="parameters" element="tns:evaluateServerForWorkload" />
+  </message>
+  <message name="powerOffServerWithCredentialResponse">
+    <part name="parameters" element="tns:powerOffServerWithCredentialResponse" />
+  </message>
+  <message name="enumerateServerPowerProfilesResponse">
+    <part name="parameters" element="tns:enumerateServerPowerProfilesResponse" />
+  </message>
+  <message name="getServerComponentTemperatureHealthStatusResponse">
+    <part name="parameters" element="tns:getServerComponentTemperatureHealthStatusResponse" />
+  </message>
+  <message name="getStaticCUPSDataResponse">
+    <part name="parameters" element="tns:getStaticCUPSDataResponse" />
+  </message>
+  <message name="getPowerDistributionResponse">
+    <part name="parameters" element="tns:getPowerDistributionResponse" />
+  </message>
+  <message name="launchPTUResponse">
+    <part name="parameters" element="tns:launchPTUResponse" />
+  </message>
+  <message name="subscribePredefinedEventResponse">
+    <part name="parameters" element="tns:subscribePredefinedEventResponse" />
+  </message>
+  <message name="addServerPowerProfileResponse">
+    <part name="parameters" element="tns:addServerPowerProfileResponse" />
+  </message>
+  <message name="associateEntity">
+    <part name="parameters" element="tns:associateEntity" />
+  </message>
+  <message name="getEventHandler">
+    <part name="parameters" element="tns:getEventHandler" />
+  </message>
+  <message name="getPECBladeInfoResponse">
+    <part name="parameters" element="tns:getPECBladeInfoResponse" />
+  </message>
+  <message name="getObservedMaxPower">
+    <part name="parameters" element="tns:getObservedMaxPower" />
+  </message>
+  <message name="updateNetworkDevicePowerProfileResponse">
+    <part name="parameters" element="tns:updateNetworkDevicePowerProfileResponse" />
+  </message>
+  <message name="getSELInTextResponse">
+    <part name="parameters" element="tns:getSELInTextResponse" />
+  </message>
+  <message name="enumerateEntitiesWithDetailsResponse">
+    <part name="parameters" element="tns:enumerateEntitiesWithDetailsResponse" />
+  </message>
+  <message name="resetServerWithCredentialResponse">
+    <part name="parameters" element="tns:resetServerWithCredentialResponse" />
+  </message>
+  <message name="getRealTimeUpsData">
+    <part name="parameters" element="tns:getRealTimeUpsData" />
+  </message>
+  <message name="predictPower">
+    <part name="parameters" element="tns:predictPower" />
+  </message>
+  <message name="enumerateEventHandlersResponse">
+    <part name="parameters" element="tns:enumerateEventHandlersResponse" />
+  </message>
+  <message name="getEnclosureAndBladeInfoResponse">
+    <part name="parameters" element="tns:getEnclosureAndBladeInfoResponse" />
+  </message>
+  <message name="getMetricAggregationPeriodListResponse">
+    <part name="parameters" element="tns:getMetricAggregationPeriodListResponse" />
+  </message>
+  <message name="updateCustomEvent">
+    <part name="parameters" element="tns:updateCustomEvent" />
+  </message>
+  <message name="addServerPowerProfile">
+    <part name="parameters" element="tns:addServerPowerProfile" />
+  </message>
+  <message name="setPolicy">
+    <part name="parameters" element="tns:setPolicy" />
+  </message>
+  <message name="updateWorkloadIntensity">
+    <part name="parameters" element="tns:updateWorkloadIntensity" />
+  </message>
+  <message name="getWorkloadPattern">
+    <part name="parameters" element="tns:getWorkloadPattern" />
+  </message>
+  <message name="unsubscribeEventHandlerResponse">
+    <part name="parameters" element="tns:unsubscribeEventHandlerResponse" />
+  </message>
+  <message name="dumpMeasurementData">
+    <part name="parameters" element="tns:dumpMeasurementData" />
+  </message>
+  <message name="getActionLogRecordsResponse">
+    <part name="parameters" element="tns:getActionLogRecordsResponse" />
+  </message>
+  <message name="removeEntityResponse">
+    <part name="parameters" element="tns:removeEntityResponse" />
+  </message>
+  <message name="addStorageDevicePowerProfileResponse">
+    <part name="parameters" element="tns:addStorageDevicePowerProfileResponse" />
+  </message>
+  <message name="removeCustomEventResponse">
+    <part name="parameters" element="tns:removeCustomEventResponse" />
+  </message>
+  <message name="submitSecretKey">
+    <part name="parameters" element="tns:submitSecretKey" />
+  </message>
+  <message name="getMetricAggregationPeriodList">
+    <part name="parameters" element="tns:getMetricAggregationPeriodList" />
+  </message>
+  <message name="enumerateEntitiesResponse">
+    <part name="parameters" element="tns:enumerateEntitiesResponse" />
+  </message>
+  <message name="getUtilizationMetricsResponse">
+    <part name="parameters" element="tns:getUtilizationMetricsResponse" />
+  </message>
+  <message name="getEventMessageAuthenticationKeyResponse">
+    <part name="parameters" element="tns:getEventMessageAuthenticationKeyResponse" />
+  </message>
+  <message name="resetObservedMaxPowerResponse">
+    <part name="parameters" element="tns:resetObservedMaxPowerResponse" />
+  </message>
+  <message name="getNotificationData">
+    <part name="parameters" element="tns:getNotificationData" />
+  </message>
+  <message name="getBatchQueryDataResponse">
+    <part name="parameters" element="tns:getBatchQueryDataResponse" />
+  </message>
+  <message name="removeEntity">
+    <part name="parameters" element="tns:removeEntity" />
+  </message>
+  <message name="enumerateEntitiesWithDetailsRecursively">
+    <part name="parameters" element="tns:enumerateEntitiesWithDetailsRecursively" />
+  </message>
+  <message name="removePolicy">
+    <part name="parameters" element="tns:removePolicy" />
+  </message>
+  <message name="getOutletState">
+    <part name="parameters" element="tns:getOutletState" />
+  </message>
+  <message name="getNotificationState">
+    <part name="parameters" element="tns:getNotificationState" />
+  </message>
+  <message name="getNotificationStateResponse">
+    <part name="parameters" element="tns:getNotificationStateResponse" />
+  </message>
+  <message name="getConnectorListResponse">
+    <part name="parameters" element="tns:getConnectorListResponse" />
+  </message>
+  <message name="getEventStateResponse">
+    <part name="parameters" element="tns:getEventStateResponse" />
+  </message>
+  <message name="getNextRawData">
+    <part name="parameters" element="tns:getNextRawData" />
+  </message>
+  <message name="exportHierarchy">
+    <part name="parameters" element="tns:exportHierarchy" />
+  </message>
+  <message name="setGlobalProperty">
+    <part name="parameters" element="tns:setGlobalProperty" />
+  </message>
+  <message name="getLatestMetricData">
+    <part name="parameters" element="tns:getLatestMetricData" />
+  </message>
+  <message name="getEntityPropertiesResponse">
+    <part name="parameters" element="tns:getEntityPropertiesResponse" />
+  </message>
+  <message name="defineCustomEvent">
+    <part name="parameters" element="tns:defineCustomEvent" />
+  </message>
+  <message name="getConnectorPropertySetResponse">
+    <part name="parameters" element="tns:getConnectorPropertySetResponse" />
+  </message>
+  <message name="enumerateNotificationsResponse">
+    <part name="parameters" element="tns:enumerateNotificationsResponse" />
+  </message>
+  <message name="removePolicyHastily">
+    <part name="parameters" element="tns:removePolicyHastily" />
+  </message>
+  <message name="importHierarchyResponse">
+    <part name="parameters" element="tns:importHierarchyResponse" />
+  </message>
+  <message name="getUtilizationMetrics">
+    <part name="parameters" element="tns:getUtilizationMetrics" />
+  </message>
+  <message name="enumerateEventHandlers">
+    <part name="parameters" element="tns:enumerateEventHandlers" />
+  </message>
+  <message name="getTemperatureRiseResponse">
+    <part name="parameters" element="tns:getTemperatureRiseResponse" />
+  </message>
+  <message name="setLoadfactorsResponse">
+    <part name="parameters" element="tns:setLoadfactorsResponse" />
+  </message>
+  <message name="associateInbandNode">
+    <part name="parameters" element="tns:associateInbandNode" />
+  </message>
+  <message name="enumeratePolicies">
+    <part name="parameters" element="tns:enumeratePolicies" />
+  </message>
+  <message name="getImmediateLogicalPredecessors">
+    <part name="parameters" element="tns:getImmediateLogicalPredecessors" />
+  </message>
+  <message name="updateCustomEventResponse">
+    <part name="parameters" element="tns:updateCustomEventResponse" />
+  </message>
+  <message name="enumerateNotifications">
+    <part name="parameters" element="tns:enumerateNotifications" />
+  </message>
+  <message name="removePolicyResponse">
+    <part name="parameters" element="tns:removePolicyResponse" />
+  </message>
+  <message name="setPolicyExResponse">
+    <part name="parameters" element="tns:setPolicyExResponse" />
+  </message>
+  <message name="startCollectingPowerDistribution">
+    <part name="parameters" element="tns:startCollectingPowerDistribution" />
+  </message>
+  <message name="enumeratePowerModels">
+    <part name="parameters" element="tns:enumeratePowerModels" />
+  </message>
+  <message name="defineCustomEventResponse">
+    <part name="parameters" element="tns:defineCustomEventResponse" />
+  </message>
+  <message name="powerOffServerResponse">
+    <part name="parameters" element="tns:powerOffServerResponse" />
+  </message>
+  <message name="enumerateStorageDevicePowerProfiles">
+    <part name="parameters" element="tns:enumerateStorageDevicePowerProfiles" />
+  </message>
+  <message name="getMultipleLatestQueryDataResponse">
+    <part name="parameters" element="tns:getMultipleLatestQueryDataResponse" />
+  </message>
+  <message name="setPolicyEx">
+    <part name="parameters" element="tns:setPolicyEx" />
+  </message>
+  <message name="setPolicyExHastily">
+    <part name="parameters" element="tns:setPolicyExHastily" />
+  </message>
+  <message name="getCustomEventDataResponse">
+    <part name="parameters" element="tns:getCustomEventDataResponse" />
+  </message>
+  <message name="isPolicyActive">
+    <part name="parameters" element="tns:isPolicyActive" />
+  </message>
+  <message name="powerOn">
+    <part name="parameters" element="tns:powerOn" />
+  </message>
+  <message name="defineNotification">
+    <part name="parameters" element="tns:defineNotification" />
+  </message>
+  <message name="setPolicyExHastilyResponse">
+    <part name="parameters" element="tns:setPolicyExHastilyResponse" />
+  </message>
+  <message name="getInletTemperatureDistributionResponse">
+    <part name="parameters" element="tns:getInletTemperatureDistributionResponse" />
+  </message>
+  <message name="getConnectorPropertySet">
+    <part name="parameters" element="tns:getConnectorPropertySet" />
+  </message>
+  <message name="schedulePolicyHastilyResponse">
+    <part name="parameters" element="tns:schedulePolicyHastilyResponse" />
+  </message>
+  <message name="evaluateServerForWorkloadResponse">
+    <part name="parameters" element="tns:evaluateServerForWorkloadResponse" />
+  </message>
+  <message name="removeServerPowerProfile">
+    <part name="parameters" element="tns:removeServerPowerProfile" />
+  </message>
+  <message name="updatePolicyEx">
+    <part name="parameters" element="tns:updatePolicyEx" />
+  </message>
+  <message name="getPolicyDataEx">
+    <part name="parameters" element="tns:getPolicyDataEx" />
+  </message>
+  <message name="enumerateServerPowerProfiles">
+    <part name="parameters" element="tns:enumerateServerPowerProfiles" />
+  </message>
+  <message name="getEventMessageAuthenticationKey">
+    <part name="parameters" element="tns:getEventMessageAuthenticationKey" />
+  </message>
+  <message name="getCustomEventData">
+    <part name="parameters" element="tns:getCustomEventData" />
+  </message>
+  <message name="getInletTemperatureDistribution">
+    <part name="parameters" element="tns:getInletTemperatureDistribution" />
+  </message>
+  <message name="dumpMetricData">
+    <part name="parameters" element="tns:dumpMetricData" />
+  </message>
+  <message name="powerOffResponse">
+    <part name="parameters" element="tns:powerOffResponse" />
+  </message>
+  <message name="getRealTimePduDataResponse">
+    <part name="parameters" element="tns:getRealTimePduDataResponse" />
+  </message>
+  <message name="updatePolicyResponse">
+    <part name="parameters" element="tns:updatePolicyResponse" />
+  </message>
+  <message name="pullHierarchy">
+    <part name="parameters" element="tns:pullHierarchy" />
+  </message>
+  <message name="subscribeEventHandlerResponse">
+    <part name="parameters" element="tns:subscribeEventHandlerResponse" />
+  </message>
+  <message name="getCoolingIndicator">
+    <part name="parameters" element="tns:getCoolingIndicator" />
+  </message>
+  <message name="getPolicyState">
+    <part name="parameters" element="tns:getPolicyState" />
+  </message>
+  <message name="getPolicyStateResponse">
+    <part name="parameters" element="tns:getPolicyStateResponse" />
+  </message>
+  <message name="powerOnOutlet">
+    <part name="parameters" element="tns:powerOnOutlet" />
+  </message>
+  <message name="reconnectEntityResponse">
+    <part name="parameters" element="tns:reconnectEntityResponse" />
+  </message>
+  <message name="getUnreachableEntities">
+    <part name="parameters" element="tns:getUnreachableEntities" />
+  </message>
+  <message name="getMultipleLatestQueryData">
+    <part name="parameters" element="tns:getMultipleLatestQueryData" />
+  </message>
+  <message name="powerOff">
+    <part name="parameters" element="tns:powerOff" />
+  </message>
+  <message name="schedulePolicyHastily">
+    <part name="parameters" element="tns:schedulePolicyHastily" />
+  </message>
+  <message name="getSystemTime">
+    <part name="parameters" element="tns:getSystemTime" />
+  </message>
+  <message name="startCollectingPowerDistributionResponse">
+    <part name="parameters" element="tns:startCollectingPowerDistributionResponse" />
+  </message>
+  <portType name="Dcm">
+    <operation name="getVersion">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getVersionRequest" message="tns:getVersion" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getVersionResponse" message="tns:getVersionResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getVersion/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="enumerateEntitiesWithDetailsRecursively">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEntitiesWithDetailsRecursivelyRequest" message="tns:enumerateEntitiesWithDetailsRecursively" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEntitiesWithDetailsRecursivelyResponse" message="tns:enumerateEntitiesWithDetailsRecursivelyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEntitiesWithDetailsRecursively/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="enumerateNetworkDevicePowerProfiles">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateNetworkDevicePowerProfilesRequest" message="tns:enumerateNetworkDevicePowerProfiles" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateNetworkDevicePowerProfilesResponse" message="tns:enumerateNetworkDevicePowerProfilesResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateNetworkDevicePowerProfiles/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="enumerateStorageDevicePowerProfiles">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateStorageDevicePowerProfilesRequest" message="tns:enumerateStorageDevicePowerProfiles" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateStorageDevicePowerProfilesResponse" message="tns:enumerateStorageDevicePowerProfilesResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateStorageDevicePowerProfiles/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="setPolicy">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicyRequest" message="tns:setPolicy" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicyResponse" message="tns:setPolicyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicy/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="enumerateServerPowerProfiles">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateServerPowerProfilesRequest" message="tns:enumerateServerPowerProfiles" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateServerPowerProfilesResponse" message="tns:enumerateServerPowerProfilesResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateServerPowerProfiles/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getEntityProperty">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEntityPropertyRequest" message="tns:getEntityProperty" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEntityPropertyResponse" message="tns:getEntityPropertyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEntityProperty/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="enumerateEntitiesRecursively">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEntitiesRecursivelyRequest" message="tns:enumerateEntitiesRecursively" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEntitiesRecursivelyResponse" message="tns:enumerateEntitiesRecursivelyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEntitiesRecursively/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getEntityProperties">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEntityPropertiesRequest" message="tns:getEntityProperties" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEntityPropertiesResponse" message="tns:getEntityPropertiesResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEntityProperties/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getPhysicalParent">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPhysicalParentRequest" message="tns:getPhysicalParent" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPhysicalParentResponse" message="tns:getPhysicalParentResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPhysicalParent/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="setPolicyState">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicyStateRequest" message="tns:setPolicyState" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicyStateResponse" message="tns:setPolicyStateResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicyState/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="updatePolicy">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updatePolicyRequest" message="tns:updatePolicy" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updatePolicyResponse" message="tns:updatePolicyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updatePolicy/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getSensorData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getSensorDataRequest" message="tns:getSensorData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getSensorDataResponse" message="tns:getSensorDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getSensorData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="predictPower">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/predictPowerRequest" message="tns:predictPower" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/predictPowerResponse" message="tns:predictPowerResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/predictPower/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="addPowerModel">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addPowerModelRequest" message="tns:addPowerModel" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addPowerModelResponse" message="tns:addPowerModelResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addPowerModel/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="removePowerModel">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removePowerModelRequest" message="tns:removePowerModel" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removePowerModelResponse" message="tns:removePowerModelResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removePowerModel/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getServerComponentTemperatureHealthStatus">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getServerComponentTemperatureHealthStatusRequest" message="tns:getServerComponentTemperatureHealthStatus" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getServerComponentTemperatureHealthStatusResponse" message="tns:getServerComponentTemperatureHealthStatusResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getServerComponentTemperatureHealthStatus/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="enumerateEntitiesWithDetails">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEntitiesWithDetailsRequest" message="tns:enumerateEntitiesWithDetails" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEntitiesWithDetailsResponse" message="tns:enumerateEntitiesWithDetailsResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEntitiesWithDetails/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getGlobalProperty">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getGlobalPropertyRequest" message="tns:getGlobalProperty" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getGlobalPropertyResponse" message="tns:getGlobalPropertyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getGlobalProperty/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getTemperatureRise">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getTemperatureRiseRequest" message="tns:getTemperatureRise" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getTemperatureRiseResponse" message="tns:getTemperatureRiseResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getTemperatureRise/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="enumeratePowerModels">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumeratePowerModelsRequest" message="tns:enumeratePowerModels" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumeratePowerModelsResponse" message="tns:enumeratePowerModelsResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumeratePowerModels/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="enumerateNotifications">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateNotificationsRequest" message="tns:enumerateNotifications" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateNotificationsResponse" message="tns:enumerateNotificationsResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateNotifications/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="updateNotification">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateNotificationRequest" message="tns:updateNotification" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateNotificationResponse" message="tns:updateNotificationResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateNotification/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="removeNotification">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeNotificationRequest" message="tns:removeNotification" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeNotificationResponse" message="tns:removeNotificationResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeNotification/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="exportHierarchy">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/exportHierarchyRequest" message="tns:exportHierarchy" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/exportHierarchyResponse" message="tns:exportHierarchyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/exportHierarchy/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="powerOnServer">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOnServerRequest" message="tns:powerOnServer" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOnServerResponse" message="tns:powerOnServerResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOnServer/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="powerOffServer">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOffServerRequest" message="tns:powerOffServer" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOffServerResponse" message="tns:powerOffServerResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOffServer/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="powerOn">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOnRequest" message="tns:powerOn" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOnResponse" message="tns:powerOnResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOn/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="powerOff">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOffRequest" message="tns:powerOff" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOffResponse" message="tns:powerOffResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOff/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getConnectorList">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getConnectorListRequest" message="tns:getConnectorList" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getConnectorListResponse" message="tns:getConnectorListResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getConnectorList/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="addEntity">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addEntityRequest" message="tns:addEntity" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addEntityResponse" message="tns:addEntityResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addEntity/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="removeEntity">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeEntityRequest" message="tns:removeEntity" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeEntityResponse" message="tns:removeEntityResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeEntity/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="importHierarchy">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/importHierarchyRequest" message="tns:importHierarchy" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/importHierarchyResponse" message="tns:importHierarchyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/importHierarchy/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="identifyEntity">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/identifyEntityRequest" message="tns:identifyEntity" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/identifyEntityResponse" message="tns:identifyEntityResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/identifyEntity/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="associateEntity">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/associateEntityRequest" message="tns:associateEntity" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/associateEntityResponse" message="tns:associateEntityResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/associateEntity/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="discoverEntities">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/discoverEntitiesRequest" message="tns:discoverEntities" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/discoverEntitiesResponse" message="tns:discoverEntitiesResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/discoverEntities/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="findEntities">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/findEntitiesRequest" message="tns:findEntities" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/findEntitiesResponse" message="tns:findEntitiesResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/findEntities/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="rediscoverEntity">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/rediscoverEntityRequest" message="tns:rediscoverEntity" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/rediscoverEntityResponse" message="tns:rediscoverEntityResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/rediscoverEntity/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="setPolicyEx">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicyExRequest" message="tns:setPolicyEx" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicyExResponse" message="tns:setPolicyExResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicyEx/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="removePolicy">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removePolicyRequest" message="tns:removePolicy" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removePolicyResponse" message="tns:removePolicyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removePolicy/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="schedulePolicy">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/schedulePolicyRequest" message="tns:schedulePolicy" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/schedulePolicyResponse" message="tns:schedulePolicyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/schedulePolicy/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getPolicyState">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPolicyStateRequest" message="tns:getPolicyState" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPolicyStateResponse" message="tns:getPolicyStateResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPolicyState/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="updatePolicyEx">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updatePolicyExRequest" message="tns:updatePolicyEx" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updatePolicyExResponse" message="tns:updatePolicyExResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updatePolicyEx/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="maintainDB">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/maintainDBRequest" message="tns:maintainDB" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/maintainDBResponse" message="tns:maintainDBResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/maintainDB/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getPolicyDataEx">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPolicyDataExRequest" message="tns:getPolicyDataEx" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPolicyDataExResponse" message="tns:getPolicyDataExResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPolicyDataEx/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="isPolicyActive">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/isPolicyActiveRequest" message="tns:isPolicyActive" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/isPolicyActiveResponse" message="tns:isPolicyActiveResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/isPolicyActive/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getQueryData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getQueryDataRequest" message="tns:getQueryData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getQueryDataResponse" message="tns:getQueryDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getQueryData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getNextData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getNextDataRequest" message="tns:getNextData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getNextDataResponse" message="tns:getNextDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getNextData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getMetricData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getMetricDataRequest" message="tns:getMetricData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getMetricDataResponse" message="tns:getMetricDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getMetricData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getEventState">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEventStateRequest" message="tns:getEventState" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEventStateResponse" message="tns:getEventStateResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEventState/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="setEventState">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setEventStateRequest" message="tns:setEventState" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setEventStateResponse" message="tns:setEventStateResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setEventState/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="setLocationInfo">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setLocationInfoRequest" message="tns:setLocationInfo" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setLocationInfoResponse" message="tns:setLocationInfoResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setLocationInfo/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getSystemTime">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getSystemTimeRequest" message="tns:getSystemTime" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getSystemTimeResponse" message="tns:getSystemTimeResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getSystemTime/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getPolicyHistory">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPolicyHistoryRequest" message="tns:getPolicyHistory" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPolicyHistoryResponse" message="tns:getPolicyHistoryResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPolicyHistory/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getOutletState">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getOutletStateRequest" message="tns:getOutletState" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getOutletStateResponse" message="tns:getOutletStateResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getOutletState/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="dumpMetricData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/dumpMetricDataRequest" message="tns:dumpMetricData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/dumpMetricDataResponse" message="tns:dumpMetricDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/dumpMetricData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getNextRawData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getNextRawDataRequest" message="tns:getNextRawData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getNextRawDataResponse" message="tns:getNextRawDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getNextRawData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getPolicyData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPolicyDataRequest" message="tns:getPolicyData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPolicyDataResponse" message="tns:getPolicyDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPolicyData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="reconnectEntity">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/reconnectEntityRequest" message="tns:reconnectEntity" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/reconnectEntityResponse" message="tns:reconnectEntityResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/reconnectEntity/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getEventHandler">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEventHandlerRequest" message="tns:getEventHandler" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEventHandlerResponse" message="tns:getEventHandlerResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEventHandler/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="deleteSecretKey">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/deleteSecretKeyRequest" message="tns:deleteSecretKey" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/deleteSecretKeyResponse" message="tns:deleteSecretKeyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/deleteSecretKey/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="submitSecretKey">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/submitSecretKeyRequest" message="tns:submitSecretKey" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/submitSecretKeyResponse" message="tns:submitSecretKeyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/submitSecretKey/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="pullHierarchy">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/pullHierarchyRequest" message="tns:pullHierarchy" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/pullHierarchyResponse" message="tns:pullHierarchyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/pullHierarchy/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="executeCommand">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/executeCommandRequest" message="tns:executeCommand" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/executeCommandResponse" message="tns:executeCommandResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/executeCommand/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="startPowerSaving">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/startPowerSavingRequest" message="tns:startPowerSaving" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/startPowerSavingResponse" message="tns:startPowerSavingResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/startPowerSaving/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="stopPowerSaving">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/stopPowerSavingRequest" message="tns:stopPowerSaving" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/stopPowerSavingResponse" message="tns:stopPowerSavingResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/stopPowerSaving/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="powerOnOutlet">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOnOutletRequest" message="tns:powerOnOutlet" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOnOutletResponse" message="tns:powerOnOutletResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOnOutlet/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="powerOffOutlet">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOffOutletRequest" message="tns:powerOffOutlet" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOffOutletResponse" message="tns:powerOffOutletResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOffOutlet/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getLoadfactors">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getLoadfactorsRequest" message="tns:getLoadfactors" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getLoadfactorsResponse" message="tns:getLoadfactorsResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getLoadfactors/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="setLoadfactors">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setLoadfactorsRequest" message="tns:setLoadfactors" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setLoadfactorsResponse" message="tns:setLoadfactorsResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setLoadfactors/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="disableCore">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/disableCoreRequest" message="tns:disableCore" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/disableCoreResponse" message="tns:disableCoreResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/disableCore/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="detectEntities">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/detectEntitiesRequest" message="tns:detectEntities" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/detectEntitiesResponse" message="tns:detectEntitiesResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/detectEntities/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getPECBladeInfo">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPECBladeInfoRequest" message="tns:getPECBladeInfo" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPECBladeInfoResponse" message="tns:getPECBladeInfoResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPECBladeInfo/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="launchPTU">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/launchPTURequest" message="tns:launchPTU" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/launchPTUResponse" message="tns:launchPTUResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/launchPTU/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getPSUPower">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPSUPowerRequest" message="tns:getPSUPower" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPSUPowerResponse" message="tns:getPSUPowerResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPSUPower/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getSELInText">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getSELInTextRequest" message="tns:getSELInText" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getSELInTextResponse" message="tns:getSELInTextResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getSELInText/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="setEntityProperties">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setEntityPropertiesRequest" message="tns:setEntityProperties" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setEntityPropertiesResponse" message="tns:setEntityPropertiesResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setEntityProperties/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="enumerateEntities">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEntitiesRequest" message="tns:enumerateEntities" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEntitiesResponse" message="tns:enumerateEntitiesResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEntities/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getUnreachableEntities">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getUnreachableEntitiesRequest" message="tns:getUnreachableEntities" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getUnreachableEntitiesResponse" message="tns:getUnreachableEntitiesResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getUnreachableEntities/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getConnectorPropertySet">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getConnectorPropertySetRequest" message="tns:getConnectorPropertySet" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getConnectorPropertySetResponse" message="tns:getConnectorPropertySetResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getConnectorPropertySet/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="identifyEntityByProtocol">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/identifyEntityByProtocolRequest" message="tns:identifyEntityByProtocol" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/identifyEntityByProtocolResponse" message="tns:identifyEntityByProtocolResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/identifyEntityByProtocol/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="disassociateEntity">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/disassociateEntityRequest" message="tns:disassociateEntity" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/disassociateEntityResponse" message="tns:disassociateEntityResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/disassociateEntity/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="findEntitiesWithDetails">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/findEntitiesWithDetailsRequest" message="tns:findEntitiesWithDetails" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/findEntitiesWithDetailsResponse" message="tns:findEntitiesWithDetailsResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/findEntitiesWithDetails/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getImmediateLogicalPredecessors">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getImmediateLogicalPredecessorsRequest" message="tns:getImmediateLogicalPredecessors" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getImmediateLogicalPredecessorsResponse" message="tns:getImmediateLogicalPredecessorsResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getImmediateLogicalPredecessors/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getEnclosureAndBladeInfo">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEnclosureAndBladeInfoRequest" message="tns:getEnclosureAndBladeInfo" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEnclosureAndBladeInfoResponse" message="tns:getEnclosureAndBladeInfoResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEnclosureAndBladeInfo/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="setPolicyExHastily">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicyExHastilyRequest" message="tns:setPolicyExHastily" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicyExHastilyResponse" message="tns:setPolicyExHastilyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicyExHastily/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="removePolicyHastily">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removePolicyHastilyRequest" message="tns:removePolicyHastily" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removePolicyHastilyResponse" message="tns:removePolicyHastilyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removePolicyHastily/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="schedulePolicyHastily">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/schedulePolicyHastilyRequest" message="tns:schedulePolicyHastily" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/schedulePolicyHastilyResponse" message="tns:schedulePolicyHastilyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/schedulePolicyHastily/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="setPolicyStateHastily">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicyStateHastilyRequest" message="tns:setPolicyStateHastily" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicyStateHastilyResponse" message="tns:setPolicyStateHastilyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setPolicyStateHastily/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="updatePolicyExHastily">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updatePolicyExHastilyRequest" message="tns:updatePolicyExHastily" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updatePolicyExHastilyResponse" message="tns:updatePolicyExHastilyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updatePolicyExHastily/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="enumeratePolicies">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumeratePoliciesRequest" message="tns:enumeratePolicies" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumeratePoliciesResponse" message="tns:enumeratePoliciesResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumeratePolicies/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="setGlobalProperty">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setGlobalPropertyRequest" message="tns:setGlobalProperty" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setGlobalPropertyResponse" message="tns:setGlobalPropertyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setGlobalProperty/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getCollectionState">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getCollectionStateRequest" message="tns:getCollectionState" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getCollectionStateResponse" message="tns:getCollectionStateResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getCollectionState/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="setCollectionState">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setCollectionStateRequest" message="tns:setCollectionState" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setCollectionStateResponse" message="tns:setCollectionStateResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setCollectionState/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="defineNotification">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/defineNotificationRequest" message="tns:defineNotification" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/defineNotificationResponse" message="tns:defineNotificationResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/defineNotification/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getNotificationData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getNotificationDataRequest" message="tns:getNotificationData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getNotificationDataResponse" message="tns:getNotificationDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getNotificationData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="setNotificationState">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setNotificationStateRequest" message="tns:setNotificationState" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setNotificationStateResponse" message="tns:setNotificationStateResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/setNotificationState/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="subscribeEventHandler">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/subscribeEventHandlerRequest" message="tns:subscribeEventHandler" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/subscribeEventHandlerResponse" message="tns:subscribeEventHandlerResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/subscribeEventHandler/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="unsubscribeEventHandler">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/unsubscribeEventHandlerRequest" message="tns:unsubscribeEventHandler" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/unsubscribeEventHandlerResponse" message="tns:unsubscribeEventHandlerResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/unsubscribeEventHandler/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="subscribePredefinedEvent">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/subscribePredefinedEventRequest" message="tns:subscribePredefinedEvent" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/subscribePredefinedEventResponse" message="tns:subscribePredefinedEventResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/subscribePredefinedEvent/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="unsubscribePredefinedEvent">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/unsubscribePredefinedEventRequest" message="tns:unsubscribePredefinedEvent" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/unsubscribePredefinedEventResponse" message="tns:unsubscribePredefinedEventResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/unsubscribePredefinedEvent/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getLatestQueryData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getLatestQueryDataRequest" message="tns:getLatestQueryData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getLatestQueryDataResponse" message="tns:getLatestQueryDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getLatestQueryData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getLatestMetricData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getLatestMetricDataRequest" message="tns:getLatestMetricData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getLatestMetricDataResponse" message="tns:getLatestMetricDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getLatestMetricData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getActiveIdlePowerEstimation">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getActiveIdlePowerEstimationRequest" message="tns:getActiveIdlePowerEstimation" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getActiveIdlePowerEstimationResponse" message="tns:getActiveIdlePowerEstimationResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getActiveIdlePowerEstimation/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="addServerPowerProfile">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addServerPowerProfileRequest" message="tns:addServerPowerProfile" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addServerPowerProfileResponse" message="tns:addServerPowerProfileResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addServerPowerProfile/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="addNetworkDevicePowerProfile">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addNetworkDevicePowerProfileRequest" message="tns:addNetworkDevicePowerProfile" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addNetworkDevicePowerProfileResponse" message="tns:addNetworkDevicePowerProfileResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addNetworkDevicePowerProfile/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="addStorageDevicePowerProfile">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addStorageDevicePowerProfileRequest" message="tns:addStorageDevicePowerProfile" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addStorageDevicePowerProfileResponse" message="tns:addStorageDevicePowerProfileResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/addStorageDevicePowerProfile/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="updateServerPowerProfile">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateServerPowerProfileRequest" message="tns:updateServerPowerProfile" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateServerPowerProfileResponse" message="tns:updateServerPowerProfileResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateServerPowerProfile/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="updateNetworkDevicePowerProfile">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateNetworkDevicePowerProfileRequest" message="tns:updateNetworkDevicePowerProfile" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateNetworkDevicePowerProfileResponse" message="tns:updateNetworkDevicePowerProfileResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateNetworkDevicePowerProfile/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="updateStorageDevicePowerProfile">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateStorageDevicePowerProfileRequest" message="tns:updateStorageDevicePowerProfile" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateStorageDevicePowerProfileResponse" message="tns:updateStorageDevicePowerProfileResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateStorageDevicePowerProfile/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="removeServerPowerProfile">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeServerPowerProfileRequest" message="tns:removeServerPowerProfile" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeServerPowerProfileResponse" message="tns:removeServerPowerProfileResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeServerPowerProfile/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="removeNetworkDevicePowerProfile">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeNetworkDevicePowerProfileRequest" message="tns:removeNetworkDevicePowerProfile" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeNetworkDevicePowerProfileResponse" message="tns:removeNetworkDevicePowerProfileResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeNetworkDevicePowerProfile/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="removeStorageDevicePowerProfile">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeStorageDevicePowerProfileRequest" message="tns:removeStorageDevicePowerProfile" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeStorageDevicePowerProfileResponse" message="tns:removeStorageDevicePowerProfileResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeStorageDevicePowerProfile/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getRealTimeSensorData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getRealTimeSensorDataRequest" message="tns:getRealTimeSensorData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getRealTimeSensorDataResponse" message="tns:getRealTimeSensorDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getRealTimeSensorData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getRealTimeComponentFaults">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getRealTimeComponentFaultsRequest" message="tns:getRealTimeComponentFaults" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getRealTimeComponentFaultsResponse" message="tns:getRealTimeComponentFaultsResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getRealTimeComponentFaults/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="dumpMeasurementData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/dumpMeasurementDataRequest" message="tns:dumpMeasurementData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/dumpMeasurementDataResponse" message="tns:dumpMeasurementDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/dumpMeasurementData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getUtilizationMetrics">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getUtilizationMetricsRequest" message="tns:getUtilizationMetrics" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getUtilizationMetricsResponse" message="tns:getUtilizationMetricsResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getUtilizationMetrics/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getQueryAggregationPeriodList">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getQueryAggregationPeriodListRequest" message="tns:getQueryAggregationPeriodList" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getQueryAggregationPeriodListResponse" message="tns:getQueryAggregationPeriodListResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getQueryAggregationPeriodList/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getMetricAggregationPeriodList">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getMetricAggregationPeriodListRequest" message="tns:getMetricAggregationPeriodList" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getMetricAggregationPeriodListResponse" message="tns:getMetricAggregationPeriodListResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getMetricAggregationPeriodList/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getRealTimePduData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getRealTimePduDataRequest" message="tns:getRealTimePduData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getRealTimePduDataResponse" message="tns:getRealTimePduDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getRealTimePduData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getRealTimeUpsData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getRealTimeUpsDataRequest" message="tns:getRealTimeUpsData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getRealTimeUpsDataResponse" message="tns:getRealTimeUpsDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getRealTimeUpsData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="powerOnServerWithCredential">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOnServerWithCredentialRequest" message="tns:powerOnServerWithCredential" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOnServerWithCredentialResponse" message="tns:powerOnServerWithCredentialResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOnServerWithCredential/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getMultipleLatestMetricData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getMultipleLatestMetricDataRequest" message="tns:getMultipleLatestMetricData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getMultipleLatestMetricDataResponse" message="tns:getMultipleLatestMetricDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getMultipleLatestMetricData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="rediscoverNodeCapabilities">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/rediscoverNodeCapabilitiesRequest" message="tns:rediscoverNodeCapabilities" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/rediscoverNodeCapabilitiesResponse" message="tns:rediscoverNodeCapabilitiesResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/rediscoverNodeCapabilities/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="clearNodePolicies">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/clearNodePoliciesRequest" message="tns:clearNodePolicies" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/clearNodePoliciesResponse" message="tns:clearNodePoliciesResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/clearNodePolicies/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="defineCustomEvent">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/defineCustomEventRequest" message="tns:defineCustomEvent" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/defineCustomEventResponse" message="tns:defineCustomEventResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/defineCustomEvent/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="enumerateCustomEvents">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateCustomEventsRequest" message="tns:enumerateCustomEvents" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateCustomEventsResponse" message="tns:enumerateCustomEventsResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateCustomEvents/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="enumerateEventHandlers">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEventHandlersRequest" message="tns:enumerateEventHandlers" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEventHandlersResponse" message="tns:enumerateEventHandlersResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/enumerateEventHandlers/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getCustomEventData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getCustomEventDataRequest" message="tns:getCustomEventData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getCustomEventDataResponse" message="tns:getCustomEventDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getCustomEventData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getPredefinedEventTypes">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPredefinedEventTypesRequest" message="tns:getPredefinedEventTypes" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPredefinedEventTypesResponse" message="tns:getPredefinedEventTypesResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPredefinedEventTypes/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="removeCustomEvent">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeCustomEventRequest" message="tns:removeCustomEvent" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeCustomEventResponse" message="tns:removeCustomEventResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/removeCustomEvent/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="updateCustomEvent">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateCustomEventRequest" message="tns:updateCustomEvent" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateCustomEventResponse" message="tns:updateCustomEventResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateCustomEvent/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getEventMessageAuthenticationKey">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEventMessageAuthenticationKeyRequest" message="tns:getEventMessageAuthenticationKey" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEventMessageAuthenticationKeyResponse" message="tns:getEventMessageAuthenticationKeyResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getEventMessageAuthenticationKey/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getActionLogRecords">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getActionLogRecordsRequest" message="tns:getActionLogRecords" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getActionLogRecordsResponse" message="tns:getActionLogRecordsResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getActionLogRecords/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="resetActiveIdlePowerEstimation">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/resetActiveIdlePowerEstimationRequest" message="tns:resetActiveIdlePowerEstimation" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/resetActiveIdlePowerEstimationResponse" message="tns:resetActiveIdlePowerEstimationResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/resetActiveIdlePowerEstimation/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="associateInbandNode">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/associateInbandNodeRequest" message="tns:associateInbandNode" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/associateInbandNodeResponse" message="tns:associateInbandNodeResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/associateInbandNode/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="updateWorkloadIntensity">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateWorkloadIntensityRequest" message="tns:updateWorkloadIntensity" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateWorkloadIntensityResponse" message="tns:updateWorkloadIntensityResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updateWorkloadIntensity/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="updatePerformanceFeedback">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updatePerformanceFeedbackRequest" message="tns:updatePerformanceFeedback" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updatePerformanceFeedbackResponse" message="tns:updatePerformanceFeedbackResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/updatePerformanceFeedback/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getNotificationState">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getNotificationStateRequest" message="tns:getNotificationState" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getNotificationStateResponse" message="tns:getNotificationStateResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getNotificationState/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getMultipleLatestQueryData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getMultipleLatestQueryDataRequest" message="tns:getMultipleLatestQueryData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getMultipleLatestQueryDataResponse" message="tns:getMultipleLatestQueryDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getMultipleLatestQueryData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getStaticCUPSData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getStaticCUPSDataRequest" message="tns:getStaticCUPSData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getStaticCUPSDataResponse" message="tns:getStaticCUPSDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getStaticCUPSData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getObservedMaxPower">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getObservedMaxPowerRequest" message="tns:getObservedMaxPower" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getObservedMaxPowerResponse" message="tns:getObservedMaxPowerResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getObservedMaxPower/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="resetObservedMaxPower">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/resetObservedMaxPowerRequest" message="tns:resetObservedMaxPower" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/resetObservedMaxPowerResponse" message="tns:resetObservedMaxPowerResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/resetObservedMaxPower/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getCoolingIndicator">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getCoolingIndicatorRequest" message="tns:getCoolingIndicator" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getCoolingIndicatorResponse" message="tns:getCoolingIndicatorResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getCoolingIndicator/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getOverCoolingIndicator">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getOverCoolingIndicatorRequest" message="tns:getOverCoolingIndicator" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getOverCoolingIndicatorResponse" message="tns:getOverCoolingIndicatorResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getOverCoolingIndicator/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="startCollectingPowerDistribution">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/startCollectingPowerDistributionRequest" message="tns:startCollectingPowerDistribution" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/startCollectingPowerDistributionResponse" message="tns:startCollectingPowerDistributionResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/startCollectingPowerDistribution/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="stopCollectingPowerDistribution">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/stopCollectingPowerDistributionRequest" message="tns:stopCollectingPowerDistribution" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/stopCollectingPowerDistributionResponse" message="tns:stopCollectingPowerDistributionResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/stopCollectingPowerDistribution/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getPowerDistribution">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPowerDistributionRequest" message="tns:getPowerDistribution" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPowerDistributionResponse" message="tns:getPowerDistributionResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getPowerDistribution/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getInletTemperatureDistribution">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getInletTemperatureDistributionRequest" message="tns:getInletTemperatureDistribution" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getInletTemperatureDistributionResponse" message="tns:getInletTemperatureDistributionResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getInletTemperatureDistribution/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getBatchQueryData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getBatchQueryDataRequest" message="tns:getBatchQueryData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getBatchQueryDataResponse" message="tns:getBatchQueryDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getBatchQueryData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getBatchMetricData">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getBatchMetricDataRequest" message="tns:getBatchMetricData" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getBatchMetricDataResponse" message="tns:getBatchMetricDataResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getBatchMetricData/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="evaluateLowUtilizationServer">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/evaluateLowUtilizationServerRequest" message="tns:evaluateLowUtilizationServer" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/evaluateLowUtilizationServerResponse" message="tns:evaluateLowUtilizationServerResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/evaluateLowUtilizationServer/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="analyzeCoolingStatus">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/analyzeCoolingStatusRequest" message="tns:analyzeCoolingStatus" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/analyzeCoolingStatusResponse" message="tns:analyzeCoolingStatusResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/analyzeCoolingStatus/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getWorkloadPattern">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getWorkloadPatternRequest" message="tns:getWorkloadPattern" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getWorkloadPatternResponse" message="tns:getWorkloadPatternResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/getWorkloadPattern/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="evaluateServerForWorkload">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/evaluateServerForWorkloadRequest" message="tns:evaluateServerForWorkload" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/evaluateServerForWorkloadResponse" message="tns:evaluateServerForWorkloadResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/evaluateServerForWorkload/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="rankServersForWorkload">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/rankServersForWorkloadRequest" message="tns:rankServersForWorkload" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/rankServersForWorkloadResponse" message="tns:rankServersForWorkloadResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/rankServersForWorkload/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="evaluateServerForMigration">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/evaluateServerForMigrationRequest" message="tns:evaluateServerForMigration" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/evaluateServerForMigrationResponse" message="tns:evaluateServerForMigrationResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/evaluateServerForMigration/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="rankServersForMigration">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/rankServersForMigrationRequest" message="tns:rankServersForMigration" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/rankServersForMigrationResponse" message="tns:rankServersForMigrationResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/rankServersForMigration/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="powerOffServerWithCredential">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOffServerWithCredentialRequest" message="tns:powerOffServerWithCredential" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOffServerWithCredentialResponse" message="tns:powerOffServerWithCredentialResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerOffServerWithCredential/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="powerCycleServerWithCredential">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerCycleServerWithCredentialRequest" message="tns:powerCycleServerWithCredential" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerCycleServerWithCredentialResponse" message="tns:powerCycleServerWithCredentialResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/powerCycleServerWithCredential/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="resetServerWithCredential">
+      <input wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/resetServerWithCredentialRequest" message="tns:resetServerWithCredential" />
+      <output wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/resetServerWithCredentialResponse" message="tns:resetServerWithCredentialResponse" />
+      <fault wsam:Action="http://wsdl.intf.dcm.intel.com/Dcm/resetServerWithCredential/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+  </portType>
+  <binding name="DcmPortBinding" type="tns:Dcm">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getVersion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="enumerateEntitiesWithDetailsRecursively">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="enumerateNetworkDevicePowerProfiles">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="enumerateStorageDevicePowerProfiles">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setPolicy">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="enumerateServerPowerProfiles">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getEntityProperty">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="enumerateEntitiesRecursively">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getEntityProperties">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getPhysicalParent">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setPolicyState">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updatePolicy">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getSensorData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="predictPower">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addPowerModel">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="removePowerModel">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getServerComponentTemperatureHealthStatus">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="enumerateEntitiesWithDetails">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getGlobalProperty">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getTemperatureRise">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="enumeratePowerModels">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="enumerateNotifications">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updateNotification">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="removeNotification">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="exportHierarchy">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="powerOnServer">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="powerOffServer">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="powerOn">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="powerOff">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getConnectorList">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addEntity">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="removeEntity">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="importHierarchy">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="identifyEntity">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="associateEntity">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="discoverEntities">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="findEntities">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="rediscoverEntity">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setPolicyEx">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="removePolicy">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="schedulePolicy">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getPolicyState">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updatePolicyEx">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="maintainDB">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getPolicyDataEx">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="isPolicyActive">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getQueryData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNextData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getMetricData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getEventState">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setEventState">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setLocationInfo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getSystemTime">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getPolicyHistory">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getOutletState">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="dumpMetricData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNextRawData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getPolicyData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="reconnectEntity">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getEventHandler">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="deleteSecretKey">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="submitSecretKey">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="pullHierarchy">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="executeCommand">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="startPowerSaving">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="stopPowerSaving">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="powerOnOutlet">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="powerOffOutlet">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getLoadfactors">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setLoadfactors">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="disableCore">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="detectEntities">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getPECBladeInfo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="launchPTU">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getPSUPower">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getSELInText">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setEntityProperties">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="enumerateEntities">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getUnreachableEntities">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getConnectorPropertySet">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="identifyEntityByProtocol">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="disassociateEntity">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="findEntitiesWithDetails">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getImmediateLogicalPredecessors">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getEnclosureAndBladeInfo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setPolicyExHastily">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="removePolicyHastily">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="schedulePolicyHastily">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setPolicyStateHastily">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updatePolicyExHastily">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="enumeratePolicies">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setGlobalProperty">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getCollectionState">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setCollectionState">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="defineNotification">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNotificationData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setNotificationState">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="subscribeEventHandler">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="unsubscribeEventHandler">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="subscribePredefinedEvent">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="unsubscribePredefinedEvent">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getLatestQueryData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getLatestMetricData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getActiveIdlePowerEstimation">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addServerPowerProfile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addNetworkDevicePowerProfile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addStorageDevicePowerProfile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updateServerPowerProfile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updateNetworkDevicePowerProfile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updateStorageDevicePowerProfile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="removeServerPowerProfile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="removeNetworkDevicePowerProfile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="removeStorageDevicePowerProfile">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getRealTimeSensorData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getRealTimeComponentFaults">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="dumpMeasurementData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getUtilizationMetrics">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getQueryAggregationPeriodList">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getMetricAggregationPeriodList">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getRealTimePduData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getRealTimeUpsData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="powerOnServerWithCredential">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getMultipleLatestMetricData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="rediscoverNodeCapabilities">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="clearNodePolicies">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="defineCustomEvent">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="enumerateCustomEvents">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="enumerateEventHandlers">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getCustomEventData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getPredefinedEventTypes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="removeCustomEvent">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updateCustomEvent">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getEventMessageAuthenticationKey">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getActionLogRecords">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="resetActiveIdlePowerEstimation">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="associateInbandNode">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updateWorkloadIntensity">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updatePerformanceFeedback">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNotificationState">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getMultipleLatestQueryData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getStaticCUPSData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getObservedMaxPower">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="resetObservedMaxPower">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getCoolingIndicator">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getOverCoolingIndicator">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="startCollectingPowerDistribution">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="stopCollectingPowerDistribution">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getPowerDistribution">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getInletTemperatureDistribution">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getBatchQueryData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getBatchMetricData">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="evaluateLowUtilizationServer">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="analyzeCoolingStatus">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getWorkloadPattern">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="evaluateServerForWorkload">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="rankServersForWorkload">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="evaluateServerForMigration">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="rankServersForMigration">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="powerOffServerWithCredential">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="powerCycleServerWithCredential">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="resetServerWithCredential">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="Dcm">
+    <port name="DcmPort" binding="tns:DcmPortBinding">
+      <soap:address location="https://fm2-dcm:8643/DCMService/services/Dcm.DcmPort/" />
+    </port>
+  </service>
+</definitions>

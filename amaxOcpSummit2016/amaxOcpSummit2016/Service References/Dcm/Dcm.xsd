@@ -1,0 +1,3022 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://wsdl.intf.dcm.intel.com/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://wsdl.intf.dcm.intel.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Exception" type="tns:Exception" />
+  <xs:element name="addEntity" type="tns:addEntity" />
+  <xs:element name="addEntityResponse" type="tns:addEntityResponse" />
+  <xs:element name="addNetworkDevicePowerProfile" type="tns:addNetworkDevicePowerProfile" />
+  <xs:element name="addNetworkDevicePowerProfileResponse" type="tns:addNetworkDevicePowerProfileResponse" />
+  <xs:element name="addPowerModel" type="tns:addPowerModel" />
+  <xs:element name="addPowerModelResponse" type="tns:addPowerModelResponse" />
+  <xs:element name="addServerPowerProfile" type="tns:addServerPowerProfile" />
+  <xs:element name="addServerPowerProfileResponse" type="tns:addServerPowerProfileResponse" />
+  <xs:element name="addStorageDevicePowerProfile" type="tns:addStorageDevicePowerProfile" />
+  <xs:element name="addStorageDevicePowerProfileResponse" type="tns:addStorageDevicePowerProfileResponse" />
+  <xs:element name="analyzeCoolingStatus" type="tns:analyzeCoolingStatus" />
+  <xs:element name="analyzeCoolingStatusResponse" type="tns:analyzeCoolingStatusResponse" />
+  <xs:element name="associateEntity" type="tns:associateEntity" />
+  <xs:element name="associateEntityResponse" type="tns:associateEntityResponse" />
+  <xs:element name="associateInbandNode" type="tns:associateInbandNode" />
+  <xs:element name="associateInbandNodeResponse" type="tns:associateInbandNodeResponse" />
+  <xs:element name="clearNodePolicies" type="tns:clearNodePolicies" />
+  <xs:element name="clearNodePoliciesResponse" type="tns:clearNodePoliciesResponse" />
+  <xs:element name="defineCustomEvent" type="tns:defineCustomEvent" />
+  <xs:element name="defineCustomEventResponse" type="tns:defineCustomEventResponse" />
+  <xs:element name="defineNotification" type="tns:defineNotification" />
+  <xs:element name="defineNotificationResponse" type="tns:defineNotificationResponse" />
+  <xs:element name="deleteSecretKey" type="tns:deleteSecretKey" />
+  <xs:element name="deleteSecretKeyResponse" type="tns:deleteSecretKeyResponse" />
+  <xs:element name="detectEntities" type="tns:detectEntities" />
+  <xs:element name="detectEntitiesResponse" type="tns:detectEntitiesResponse" />
+  <xs:element name="disableCore" type="tns:disableCore" />
+  <xs:element name="disableCoreResponse" type="tns:disableCoreResponse" />
+  <xs:element name="disassociateEntity" type="tns:disassociateEntity" />
+  <xs:element name="disassociateEntityResponse" type="tns:disassociateEntityResponse" />
+  <xs:element name="discoverEntities" type="tns:discoverEntities" />
+  <xs:element name="discoverEntitiesResponse" type="tns:discoverEntitiesResponse" />
+  <xs:element name="dumpMeasurementData" type="tns:dumpMeasurementData" />
+  <xs:element name="dumpMeasurementDataResponse" type="tns:dumpMeasurementDataResponse" />
+  <xs:element name="dumpMetricData" type="tns:dumpMetricData" />
+  <xs:element name="dumpMetricDataResponse" type="tns:dumpMetricDataResponse" />
+  <xs:element name="enumerateCustomEvents" type="tns:enumerateCustomEvents" />
+  <xs:element name="enumerateCustomEventsResponse" type="tns:enumerateCustomEventsResponse" />
+  <xs:element name="enumerateEntities" type="tns:enumerateEntities" />
+  <xs:element name="enumerateEntitiesRecursively" type="tns:enumerateEntitiesRecursively" />
+  <xs:element name="enumerateEntitiesRecursivelyResponse" type="tns:enumerateEntitiesRecursivelyResponse" />
+  <xs:element name="enumerateEntitiesResponse" type="tns:enumerateEntitiesResponse" />
+  <xs:element name="enumerateEntitiesWithDetails" type="tns:enumerateEntitiesWithDetails" />
+  <xs:element name="enumerateEntitiesWithDetailsRecursively" type="tns:enumerateEntitiesWithDetailsRecursively" />
+  <xs:element name="enumerateEntitiesWithDetailsRecursivelyResponse" type="tns:enumerateEntitiesWithDetailsRecursivelyResponse" />
+  <xs:element name="enumerateEntitiesWithDetailsResponse" type="tns:enumerateEntitiesWithDetailsResponse" />
+  <xs:element name="enumerateEventHandlers" type="tns:enumerateEventHandlers" />
+  <xs:element name="enumerateEventHandlersResponse" type="tns:enumerateEventHandlersResponse" />
+  <xs:element name="enumerateNetworkDevicePowerProfiles" type="tns:enumerateNetworkDevicePowerProfiles" />
+  <xs:element name="enumerateNetworkDevicePowerProfilesResponse" type="tns:enumerateNetworkDevicePowerProfilesResponse" />
+  <xs:element name="enumerateNotifications" type="tns:enumerateNotifications" />
+  <xs:element name="enumerateNotificationsResponse" type="tns:enumerateNotificationsResponse" />
+  <xs:element name="enumeratePolicies" type="tns:enumeratePolicies" />
+  <xs:element name="enumeratePoliciesResponse" type="tns:enumeratePoliciesResponse" />
+  <xs:element name="enumeratePowerModels" type="tns:enumeratePowerModels" />
+  <xs:element name="enumeratePowerModelsResponse" type="tns:enumeratePowerModelsResponse" />
+  <xs:element name="enumerateServerPowerProfiles" type="tns:enumerateServerPowerProfiles" />
+  <xs:element name="enumerateServerPowerProfilesResponse" type="tns:enumerateServerPowerProfilesResponse" />
+  <xs:element name="enumerateStorageDevicePowerProfiles" type="tns:enumerateStorageDevicePowerProfiles" />
+  <xs:element name="enumerateStorageDevicePowerProfilesResponse" type="tns:enumerateStorageDevicePowerProfilesResponse" />
+  <xs:element name="evaluateLowUtilizationServer" type="tns:evaluateLowUtilizationServer" />
+  <xs:element name="evaluateLowUtilizationServerResponse" type="tns:evaluateLowUtilizationServerResponse" />
+  <xs:element name="evaluateServerForMigration" type="tns:evaluateServerForMigration" />
+  <xs:element name="evaluateServerForMigrationResponse" type="tns:evaluateServerForMigrationResponse" />
+  <xs:element name="evaluateServerForWorkload" type="tns:evaluateServerForWorkload" />
+  <xs:element name="evaluateServerForWorkloadResponse" type="tns:evaluateServerForWorkloadResponse" />
+  <xs:element name="executeCommand" type="tns:executeCommand" />
+  <xs:element name="executeCommandResponse" type="tns:executeCommandResponse" />
+  <xs:element name="exportHierarchy" type="tns:exportHierarchy" />
+  <xs:element name="exportHierarchyResponse" type="tns:exportHierarchyResponse" />
+  <xs:element name="findEntities" type="tns:findEntities" />
+  <xs:element name="findEntitiesResponse" type="tns:findEntitiesResponse" />
+  <xs:element name="findEntitiesWithDetails" type="tns:findEntitiesWithDetails" />
+  <xs:element name="findEntitiesWithDetailsResponse" type="tns:findEntitiesWithDetailsResponse" />
+  <xs:element name="getActionLogRecords" type="tns:getActionLogRecords" />
+  <xs:element name="getActionLogRecordsResponse" type="tns:getActionLogRecordsResponse" />
+  <xs:element name="getActiveIdlePowerEstimation" type="tns:getActiveIdlePowerEstimation" />
+  <xs:element name="getActiveIdlePowerEstimationResponse" type="tns:getActiveIdlePowerEstimationResponse" />
+  <xs:element name="getBatchMetricData" type="tns:getBatchMetricData" />
+  <xs:element name="getBatchMetricDataResponse" type="tns:getBatchMetricDataResponse" />
+  <xs:element name="getBatchQueryData" type="tns:getBatchQueryData" />
+  <xs:element name="getBatchQueryDataResponse" type="tns:getBatchQueryDataResponse" />
+  <xs:element name="getCollectionState" type="tns:getCollectionState" />
+  <xs:element name="getCollectionStateResponse" type="tns:getCollectionStateResponse" />
+  <xs:element name="getConnectorList" type="tns:getConnectorList" />
+  <xs:element name="getConnectorListResponse" type="tns:getConnectorListResponse" />
+  <xs:element name="getConnectorPropertySet" type="tns:getConnectorPropertySet" />
+  <xs:element name="getConnectorPropertySetResponse" type="tns:getConnectorPropertySetResponse" />
+  <xs:element name="getCoolingIndicator" type="tns:getCoolingIndicator" />
+  <xs:element name="getCoolingIndicatorResponse" type="tns:getCoolingIndicatorResponse" />
+  <xs:element name="getCustomEventData" type="tns:getCustomEventData" />
+  <xs:element name="getCustomEventDataResponse" type="tns:getCustomEventDataResponse" />
+  <xs:element name="getEnclosureAndBladeInfo" type="tns:getEnclosureAndBladeInfo" />
+  <xs:element name="getEnclosureAndBladeInfoResponse" type="tns:getEnclosureAndBladeInfoResponse" />
+  <xs:element name="getEntityProperties" type="tns:getEntityProperties" />
+  <xs:element name="getEntityPropertiesResponse" type="tns:getEntityPropertiesResponse" />
+  <xs:element name="getEntityProperty" type="tns:getEntityProperty" />
+  <xs:element name="getEntityPropertyResponse" type="tns:getEntityPropertyResponse" />
+  <xs:element name="getEventHandler" type="tns:getEventHandler" />
+  <xs:element name="getEventHandlerResponse" type="tns:getEventHandlerResponse" />
+  <xs:element name="getEventMessageAuthenticationKey" type="tns:getEventMessageAuthenticationKey" />
+  <xs:element name="getEventMessageAuthenticationKeyResponse" type="tns:getEventMessageAuthenticationKeyResponse" />
+  <xs:element name="getEventState" type="tns:getEventState" />
+  <xs:element name="getEventStateResponse" type="tns:getEventStateResponse" />
+  <xs:element name="getGlobalProperty" type="tns:getGlobalProperty" />
+  <xs:element name="getGlobalPropertyResponse" type="tns:getGlobalPropertyResponse" />
+  <xs:element name="getImmediateLogicalPredecessors" type="tns:getImmediateLogicalPredecessors" />
+  <xs:element name="getImmediateLogicalPredecessorsResponse" type="tns:getImmediateLogicalPredecessorsResponse" />
+  <xs:element name="getInletTemperatureDistribution" type="tns:getInletTemperatureDistribution" />
+  <xs:element name="getInletTemperatureDistributionResponse" type="tns:getInletTemperatureDistributionResponse" />
+  <xs:element name="getLatestMetricData" type="tns:getLatestMetricData" />
+  <xs:element name="getLatestMetricDataResponse" type="tns:getLatestMetricDataResponse" />
+  <xs:element name="getLatestQueryData" type="tns:getLatestQueryData" />
+  <xs:element name="getLatestQueryDataResponse" type="tns:getLatestQueryDataResponse" />
+  <xs:element name="getLoadfactors" type="tns:getLoadfactors" />
+  <xs:element name="getLoadfactorsResponse" type="tns:getLoadfactorsResponse" />
+  <xs:element name="getMetricAggregationPeriodList" type="tns:getMetricAggregationPeriodList" />
+  <xs:element name="getMetricAggregationPeriodListResponse" type="tns:getMetricAggregationPeriodListResponse" />
+  <xs:element name="getMetricData" type="tns:getMetricData" />
+  <xs:element name="getMetricDataResponse" type="tns:getMetricDataResponse" />
+  <xs:element name="getMultipleLatestMetricData" type="tns:getMultipleLatestMetricData" />
+  <xs:element name="getMultipleLatestMetricDataResponse" type="tns:getMultipleLatestMetricDataResponse" />
+  <xs:element name="getMultipleLatestQueryData" type="tns:getMultipleLatestQueryData" />
+  <xs:element name="getMultipleLatestQueryDataResponse" type="tns:getMultipleLatestQueryDataResponse" />
+  <xs:element name="getNextData" type="tns:getNextData" />
+  <xs:element name="getNextDataResponse" type="tns:getNextDataResponse" />
+  <xs:element name="getNextRawData" type="tns:getNextRawData" />
+  <xs:element name="getNextRawDataResponse" type="tns:getNextRawDataResponse" />
+  <xs:element name="getNotificationData" type="tns:getNotificationData" />
+  <xs:element name="getNotificationDataResponse" type="tns:getNotificationDataResponse" />
+  <xs:element name="getNotificationState" type="tns:getNotificationState" />
+  <xs:element name="getNotificationStateResponse" type="tns:getNotificationStateResponse" />
+  <xs:element name="getObservedMaxPower" type="tns:getObservedMaxPower" />
+  <xs:element name="getObservedMaxPowerResponse" type="tns:getObservedMaxPowerResponse" />
+  <xs:element name="getOutletState" type="tns:getOutletState" />
+  <xs:element name="getOutletStateResponse" type="tns:getOutletStateResponse" />
+  <xs:element name="getOverCoolingIndicator" type="tns:getOverCoolingIndicator" />
+  <xs:element name="getOverCoolingIndicatorResponse" type="tns:getOverCoolingIndicatorResponse" />
+  <xs:element name="getPECBladeInfo" type="tns:getPECBladeInfo" />
+  <xs:element name="getPECBladeInfoResponse" type="tns:getPECBladeInfoResponse" />
+  <xs:element name="getPSUPower" type="tns:getPSUPower" />
+  <xs:element name="getPSUPowerResponse" type="tns:getPSUPowerResponse" />
+  <xs:element name="getPhysicalParent" type="tns:getPhysicalParent" />
+  <xs:element name="getPhysicalParentResponse" type="tns:getPhysicalParentResponse" />
+  <xs:element name="getPolicyData" type="tns:getPolicyData" />
+  <xs:element name="getPolicyDataEx" type="tns:getPolicyDataEx" />
+  <xs:element name="getPolicyDataExResponse" type="tns:getPolicyDataExResponse" />
+  <xs:element name="getPolicyDataResponse" type="tns:getPolicyDataResponse" />
+  <xs:element name="getPolicyHistory" type="tns:getPolicyHistory" />
+  <xs:element name="getPolicyHistoryResponse" type="tns:getPolicyHistoryResponse" />
+  <xs:element name="getPolicyState" type="tns:getPolicyState" />
+  <xs:element name="getPolicyStateResponse" type="tns:getPolicyStateResponse" />
+  <xs:element name="getPowerDistribution" type="tns:getPowerDistribution" />
+  <xs:element name="getPowerDistributionResponse" type="tns:getPowerDistributionResponse" />
+  <xs:element name="getPredefinedEventTypes" type="tns:getPredefinedEventTypes" />
+  <xs:element name="getPredefinedEventTypesResponse" type="tns:getPredefinedEventTypesResponse" />
+  <xs:element name="getQueryAggregationPeriodList" type="tns:getQueryAggregationPeriodList" />
+  <xs:element name="getQueryAggregationPeriodListResponse" type="tns:getQueryAggregationPeriodListResponse" />
+  <xs:element name="getQueryData" type="tns:getQueryData" />
+  <xs:element name="getQueryDataResponse" type="tns:getQueryDataResponse" />
+  <xs:element name="getRealTimeComponentFaults" type="tns:getRealTimeComponentFaults" />
+  <xs:element name="getRealTimeComponentFaultsResponse" type="tns:getRealTimeComponentFaultsResponse" />
+  <xs:element name="getRealTimePduData" type="tns:getRealTimePduData" />
+  <xs:element name="getRealTimePduDataResponse" type="tns:getRealTimePduDataResponse" />
+  <xs:element name="getRealTimeSensorData" type="tns:getRealTimeSensorData" />
+  <xs:element name="getRealTimeSensorDataResponse" type="tns:getRealTimeSensorDataResponse" />
+  <xs:element name="getRealTimeUpsData" type="tns:getRealTimeUpsData" />
+  <xs:element name="getRealTimeUpsDataResponse" type="tns:getRealTimeUpsDataResponse" />
+  <xs:element name="getSELInText" type="tns:getSELInText" />
+  <xs:element name="getSELInTextResponse" type="tns:getSELInTextResponse" />
+  <xs:element name="getSensorData" type="tns:getSensorData" />
+  <xs:element name="getSensorDataResponse" type="tns:getSensorDataResponse" />
+  <xs:element name="getServerComponentTemperatureHealthStatus" type="tns:getServerComponentTemperatureHealthStatus" />
+  <xs:element name="getServerComponentTemperatureHealthStatusResponse" type="tns:getServerComponentTemperatureHealthStatusResponse" />
+  <xs:element name="getStaticCUPSData" type="tns:getStaticCUPSData" />
+  <xs:element name="getStaticCUPSDataResponse" type="tns:getStaticCUPSDataResponse" />
+  <xs:element name="getSystemTime" type="tns:getSystemTime" />
+  <xs:element name="getSystemTimeResponse" type="tns:getSystemTimeResponse" />
+  <xs:element name="getTemperatureRise" type="tns:getTemperatureRise" />
+  <xs:element name="getTemperatureRiseResponse" type="tns:getTemperatureRiseResponse" />
+  <xs:element name="getUnreachableEntities" type="tns:getUnreachableEntities" />
+  <xs:element name="getUnreachableEntitiesResponse" type="tns:getUnreachableEntitiesResponse" />
+  <xs:element name="getUtilizationMetrics" type="tns:getUtilizationMetrics" />
+  <xs:element name="getUtilizationMetricsResponse" type="tns:getUtilizationMetricsResponse" />
+  <xs:element name="getVersion" type="tns:getVersion" />
+  <xs:element name="getVersionResponse" type="tns:getVersionResponse" />
+  <xs:element name="getWorkloadPattern" type="tns:getWorkloadPattern" />
+  <xs:element name="getWorkloadPatternResponse" type="tns:getWorkloadPatternResponse" />
+  <xs:element name="identifyEntity" type="tns:identifyEntity" />
+  <xs:element name="identifyEntityByProtocol" type="tns:identifyEntityByProtocol" />
+  <xs:element name="identifyEntityByProtocolResponse" type="tns:identifyEntityByProtocolResponse" />
+  <xs:element name="identifyEntityResponse" type="tns:identifyEntityResponse" />
+  <xs:element name="importHierarchy" type="tns:importHierarchy" />
+  <xs:element name="importHierarchyResponse" type="tns:importHierarchyResponse" />
+  <xs:element name="isPolicyActive" type="tns:isPolicyActive" />
+  <xs:element name="isPolicyActiveResponse" type="tns:isPolicyActiveResponse" />
+  <xs:element name="launchPTU" type="tns:launchPTU" />
+  <xs:element name="launchPTUResponse" type="tns:launchPTUResponse" />
+  <xs:element name="maintainDB" type="tns:maintainDB" />
+  <xs:element name="maintainDBResponse" type="tns:maintainDBResponse" />
+  <xs:element name="powerCycleServerWithCredential" type="tns:powerCycleServerWithCredential" />
+  <xs:element name="powerCycleServerWithCredentialResponse" type="tns:powerCycleServerWithCredentialResponse" />
+  <xs:element name="powerOff" type="tns:powerOff" />
+  <xs:element name="powerOffOutlet" type="tns:powerOffOutlet" />
+  <xs:element name="powerOffOutletResponse" type="tns:powerOffOutletResponse" />
+  <xs:element name="powerOffResponse" type="tns:powerOffResponse" />
+  <xs:element name="powerOffServer" type="tns:powerOffServer" />
+  <xs:element name="powerOffServerResponse" type="tns:powerOffServerResponse" />
+  <xs:element name="powerOffServerWithCredential" type="tns:powerOffServerWithCredential" />
+  <xs:element name="powerOffServerWithCredentialResponse" type="tns:powerOffServerWithCredentialResponse" />
+  <xs:element name="powerOn" type="tns:powerOn" />
+  <xs:element name="powerOnOutlet" type="tns:powerOnOutlet" />
+  <xs:element name="powerOnOutletResponse" type="tns:powerOnOutletResponse" />
+  <xs:element name="powerOnResponse" type="tns:powerOnResponse" />
+  <xs:element name="powerOnServer" type="tns:powerOnServer" />
+  <xs:element name="powerOnServerResponse" type="tns:powerOnServerResponse" />
+  <xs:element name="powerOnServerWithCredential" type="tns:powerOnServerWithCredential" />
+  <xs:element name="powerOnServerWithCredentialResponse" type="tns:powerOnServerWithCredentialResponse" />
+  <xs:element name="predictPower" type="tns:predictPower" />
+  <xs:element name="predictPowerResponse" type="tns:predictPowerResponse" />
+  <xs:element name="pullHierarchy" type="tns:pullHierarchy" />
+  <xs:element name="pullHierarchyResponse" type="tns:pullHierarchyResponse" />
+  <xs:element name="rankServersForMigration" type="tns:rankServersForMigration" />
+  <xs:element name="rankServersForMigrationResponse" type="tns:rankServersForMigrationResponse" />
+  <xs:element name="rankServersForWorkload" type="tns:rankServersForWorkload" />
+  <xs:element name="rankServersForWorkloadResponse" type="tns:rankServersForWorkloadResponse" />
+  <xs:element name="reconnectEntity" type="tns:reconnectEntity" />
+  <xs:element name="reconnectEntityResponse" type="tns:reconnectEntityResponse" />
+  <xs:element name="rediscoverEntity" type="tns:rediscoverEntity" />
+  <xs:element name="rediscoverEntityResponse" type="tns:rediscoverEntityResponse" />
+  <xs:element name="rediscoverNodeCapabilities" type="tns:rediscoverNodeCapabilities" />
+  <xs:element name="rediscoverNodeCapabilitiesResponse" type="tns:rediscoverNodeCapabilitiesResponse" />
+  <xs:element name="removeCustomEvent" type="tns:removeCustomEvent" />
+  <xs:element name="removeCustomEventResponse" type="tns:removeCustomEventResponse" />
+  <xs:element name="removeEntity" type="tns:removeEntity" />
+  <xs:element name="removeEntityResponse" type="tns:removeEntityResponse" />
+  <xs:element name="removeNetworkDevicePowerProfile" type="tns:removeNetworkDevicePowerProfile" />
+  <xs:element name="removeNetworkDevicePowerProfileResponse" type="tns:removeNetworkDevicePowerProfileResponse" />
+  <xs:element name="removeNotification" type="tns:removeNotification" />
+  <xs:element name="removeNotificationResponse" type="tns:removeNotificationResponse" />
+  <xs:element name="removePolicy" type="tns:removePolicy" />
+  <xs:element name="removePolicyHastily" type="tns:removePolicyHastily" />
+  <xs:element name="removePolicyHastilyResponse" type="tns:removePolicyHastilyResponse" />
+  <xs:element name="removePolicyResponse" type="tns:removePolicyResponse" />
+  <xs:element name="removePowerModel" type="tns:removePowerModel" />
+  <xs:element name="removePowerModelResponse" type="tns:removePowerModelResponse" />
+  <xs:element name="removeServerPowerProfile" type="tns:removeServerPowerProfile" />
+  <xs:element name="removeServerPowerProfileResponse" type="tns:removeServerPowerProfileResponse" />
+  <xs:element name="removeStorageDevicePowerProfile" type="tns:removeStorageDevicePowerProfile" />
+  <xs:element name="removeStorageDevicePowerProfileResponse" type="tns:removeStorageDevicePowerProfileResponse" />
+  <xs:element name="resetActiveIdlePowerEstimation" type="tns:resetActiveIdlePowerEstimation" />
+  <xs:element name="resetActiveIdlePowerEstimationResponse" type="tns:resetActiveIdlePowerEstimationResponse" />
+  <xs:element name="resetObservedMaxPower" type="tns:resetObservedMaxPower" />
+  <xs:element name="resetObservedMaxPowerResponse" type="tns:resetObservedMaxPowerResponse" />
+  <xs:element name="resetServerWithCredential" type="tns:resetServerWithCredential" />
+  <xs:element name="resetServerWithCredentialResponse" type="tns:resetServerWithCredentialResponse" />
+  <xs:element name="schedulePolicy" type="tns:schedulePolicy" />
+  <xs:element name="schedulePolicyHastily" type="tns:schedulePolicyHastily" />
+  <xs:element name="schedulePolicyHastilyResponse" type="tns:schedulePolicyHastilyResponse" />
+  <xs:element name="schedulePolicyResponse" type="tns:schedulePolicyResponse" />
+  <xs:element name="setCollectionState" type="tns:setCollectionState" />
+  <xs:element name="setCollectionStateResponse" type="tns:setCollectionStateResponse" />
+  <xs:element name="setEntityProperties" type="tns:setEntityProperties" />
+  <xs:element name="setEntityPropertiesResponse" type="tns:setEntityPropertiesResponse" />
+  <xs:element name="setEventState" type="tns:setEventState" />
+  <xs:element name="setEventStateResponse" type="tns:setEventStateResponse" />
+  <xs:element name="setGlobalProperty" type="tns:setGlobalProperty" />
+  <xs:element name="setGlobalPropertyResponse" type="tns:setGlobalPropertyResponse" />
+  <xs:element name="setLoadfactors" type="tns:setLoadfactors" />
+  <xs:element name="setLoadfactorsResponse" type="tns:setLoadfactorsResponse" />
+  <xs:element name="setLocationInfo" type="tns:setLocationInfo" />
+  <xs:element name="setLocationInfoResponse" type="tns:setLocationInfoResponse" />
+  <xs:element name="setNotificationState" type="tns:setNotificationState" />
+  <xs:element name="setNotificationStateResponse" type="tns:setNotificationStateResponse" />
+  <xs:element name="setPolicy" type="tns:setPolicy" />
+  <xs:element name="setPolicyEx" type="tns:setPolicyEx" />
+  <xs:element name="setPolicyExHastily" type="tns:setPolicyExHastily" />
+  <xs:element name="setPolicyExHastilyResponse" type="tns:setPolicyExHastilyResponse" />
+  <xs:element name="setPolicyExResponse" type="tns:setPolicyExResponse" />
+  <xs:element name="setPolicyResponse" type="tns:setPolicyResponse" />
+  <xs:element name="setPolicyState" type="tns:setPolicyState" />
+  <xs:element name="setPolicyStateHastily" type="tns:setPolicyStateHastily" />
+  <xs:element name="setPolicyStateHastilyResponse" type="tns:setPolicyStateHastilyResponse" />
+  <xs:element name="setPolicyStateResponse" type="tns:setPolicyStateResponse" />
+  <xs:element name="startCollectingPowerDistribution" type="tns:startCollectingPowerDistribution" />
+  <xs:element name="startCollectingPowerDistributionResponse" type="tns:startCollectingPowerDistributionResponse" />
+  <xs:element name="startPowerSaving" type="tns:startPowerSaving" />
+  <xs:element name="startPowerSavingResponse" type="tns:startPowerSavingResponse" />
+  <xs:element name="stopCollectingPowerDistribution" type="tns:stopCollectingPowerDistribution" />
+  <xs:element name="stopCollectingPowerDistributionResponse" type="tns:stopCollectingPowerDistributionResponse" />
+  <xs:element name="stopPowerSaving" type="tns:stopPowerSaving" />
+  <xs:element name="stopPowerSavingResponse" type="tns:stopPowerSavingResponse" />
+  <xs:element name="submitSecretKey" type="tns:submitSecretKey" />
+  <xs:element name="submitSecretKeyResponse" type="tns:submitSecretKeyResponse" />
+  <xs:element name="subscribeEventHandler" type="tns:subscribeEventHandler" />
+  <xs:element name="subscribeEventHandlerResponse" type="tns:subscribeEventHandlerResponse" />
+  <xs:element name="subscribePredefinedEvent" type="tns:subscribePredefinedEvent" />
+  <xs:element name="subscribePredefinedEventResponse" type="tns:subscribePredefinedEventResponse" />
+  <xs:element name="unsubscribeEventHandler" type="tns:unsubscribeEventHandler" />
+  <xs:element name="unsubscribeEventHandlerResponse" type="tns:unsubscribeEventHandlerResponse" />
+  <xs:element name="unsubscribePredefinedEvent" type="tns:unsubscribePredefinedEvent" />
+  <xs:element name="unsubscribePredefinedEventResponse" type="tns:unsubscribePredefinedEventResponse" />
+  <xs:element name="updateCustomEvent" type="tns:updateCustomEvent" />
+  <xs:element name="updateCustomEventResponse" type="tns:updateCustomEventResponse" />
+  <xs:element name="updateNetworkDevicePowerProfile" type="tns:updateNetworkDevicePowerProfile" />
+  <xs:element name="updateNetworkDevicePowerProfileResponse" type="tns:updateNetworkDevicePowerProfileResponse" />
+  <xs:element name="updateNotification" type="tns:updateNotification" />
+  <xs:element name="updateNotificationResponse" type="tns:updateNotificationResponse" />
+  <xs:element name="updatePerformanceFeedback" type="tns:updatePerformanceFeedback" />
+  <xs:element name="updatePerformanceFeedbackResponse" type="tns:updatePerformanceFeedbackResponse" />
+  <xs:element name="updatePolicy" type="tns:updatePolicy" />
+  <xs:element name="updatePolicyEx" type="tns:updatePolicyEx" />
+  <xs:element name="updatePolicyExHastily" type="tns:updatePolicyExHastily" />
+  <xs:element name="updatePolicyExHastilyResponse" type="tns:updatePolicyExHastilyResponse" />
+  <xs:element name="updatePolicyExResponse" type="tns:updatePolicyExResponse" />
+  <xs:element name="updatePolicyResponse" type="tns:updatePolicyResponse" />
+  <xs:element name="updateServerPowerProfile" type="tns:updateServerPowerProfile" />
+  <xs:element name="updateServerPowerProfileResponse" type="tns:updateServerPowerProfileResponse" />
+  <xs:element name="updateStorageDevicePowerProfile" type="tns:updateStorageDevicePowerProfile" />
+  <xs:element name="updateStorageDevicePowerProfileResponse" type="tns:updateStorageDevicePowerProfileResponse" />
+  <xs:element name="updateWorkloadIntensity" type="tns:updateWorkloadIntensity" />
+  <xs:element name="updateWorkloadIntensityResponse" type="tns:updateWorkloadIntensityResponse" />
+  <xs:complexType name="schedulePolicyHastily">
+    <xs:sequence>
+      <xs:element name="policyId" type="xs:int" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      <xs:element name="startHour" type="xs:int" />
+      <xs:element name="endHour" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="days" nillable="true" type="tns:day" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="schedulePolicyHastilyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSystemTime">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getSystemTimeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="disableCore">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element name="disableCoreNumber" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="disableCoreResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getUnreachableEntities">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getUnreachableEntitiesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMultipleLatestQueryData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="entityIds" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="queryTypes" nillable="true" type="tns:queryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMultipleLatestQueryDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:latestQueryData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="latestQueryData">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="queryType" type="tns:queryType" />
+      <xs:element minOccurs="0" name="value" type="tns:rawPtData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rawPtData">
+    <xs:sequence>
+      <xs:element name="period" type="xs:int" />
+      <xs:element minOccurs="0" name="time" type="xs:dateTime" />
+      <xs:element name="value" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOff">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="entityIds" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="type" type="tns:powerOffOption" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOffResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCoolingIndicator">
+    <xs:sequence>
+      <xs:element name="groupId" type="xs:int" />
+      <xs:element name="allowedTemperature" type="xs:int" />
+      <xs:element name="recommendedTemperature" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCoolingIndicatorResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPolicyState">
+    <xs:sequence>
+      <xs:element name="policyId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPolicyStateResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTemperatureRise">
+    <xs:sequence>
+      <xs:element name="groupId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTemperatureRiseResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNextData">
+    <xs:sequence>
+      <xs:element name="enumerationHandle" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNextDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:enumerationData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerationData">
+    <xs:sequence>
+      <xs:element name="enumerationHandle" type="xs:int" />
+      <xs:element minOccurs="0" name="expirationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="queryData" nillable="true" type="tns:ptData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ptData">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="time" type="xs:dateTime" />
+      <xs:element name="value" type="xs:int" />
+      <xs:element name="value64" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOnOutlet">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element name="port" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOnOutletResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMultipleLatestMetricData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="entityIds" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="metricTypes" nillable="true" type="tns:metricType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMultipleLatestMetricDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:latestMetricData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="latestMetricData">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="metricType" type="tns:metricType" />
+      <xs:element minOccurs="0" name="value" type="tns:rawPtData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pullHierarchy">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="pullHierarchyResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:hierarchyInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hierarchyInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="entities" nillable="true" type="tns:entityData" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="links" nillable="true" type="tns:entityLink" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="entityData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="entityType" type="tns:entityType" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="properties" nillable="true" type="tns:property" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="property">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="tns:entityProperty" />
+      <xs:element minOccurs="0" name="value" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="entityLink">
+    <xs:sequence>
+      <xs:element name="groupId" type="xs:int" />
+      <xs:element name="memberId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCustomEventData">
+    <xs:sequence>
+      <xs:element name="eventId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCustomEventDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:customEventData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="customEventData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="conditionOperator" type="tns:conditionOperator" />
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element name="evalPeriod" type="xs:int" />
+      <xs:element minOccurs="0" name="eventDescription" type="xs:string" />
+      <xs:element minOccurs="0" name="eventType" type="tns:customEventType" />
+      <xs:element name="threshold" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getInletTemperatureDistribution">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getInletTemperatureDistributionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:measurementDistributionInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="measurementDistributionInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mdDatas" nillable="true" type="tns:measurementDistributionData" />
+      <xs:element name="period" type="xs:int" />
+      <xs:element minOccurs="0" name="time" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="measurementDistributionData">
+    <xs:sequence>
+      <xs:element name="proportion" type="xs:double" />
+      <xs:element name="value" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dumpMetricData">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="metricType" type="tns:metricType" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dumpMetricDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:enumerationRawData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerationRawData">
+    <xs:sequence>
+      <xs:element name="enumerationHandle" type="xs:int" />
+      <xs:element minOccurs="0" name="expirationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="queryData" nillable="true" type="tns:rawPtData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEventMessageAuthenticationKey">
+    <xs:sequence>
+      <xs:element name="handlerId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEventMessageAuthenticationKeyResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setCollectionState">
+    <xs:sequence>
+      <xs:element name="suspend" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setCollectionStateResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getStaticCUPSData">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getStaticCUPSDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:staticCUPSData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="staticCUPSData">
+    <xs:sequence>
+      <xs:element name="CPUCores_Threads" type="xs:int" />
+      <xs:element name="CPUClockSpeed" type="xs:int" />
+      <xs:element name="BaselineAvgCPUUsed" type="xs:long" />
+      <xs:element name="MaxCPU" type="xs:long" />
+      <xs:element name="TotalMemory" type="xs:long" />
+      <xs:element name="BaselineAvgMemUsed" type="xs:long" />
+      <xs:element name="MaxMemory" type="xs:long" />
+      <xs:element name="BaselineAvgDiskUsed" type="xs:long" />
+      <xs:element name="MaxDisk" type="xs:long" />
+      <xs:element name="BaselineAvgNetUsed" type="xs:long" />
+      <xs:element name="MaxNetwork" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePolicyEx">
+    <xs:sequence>
+      <xs:element name="policyId" type="xs:int" />
+      <xs:element name="threshold" type="xs:int" />
+      <xs:element name="reserveBudget" type="xs:int" />
+      <xs:element minOccurs="0" name="policyDescription" type="xs:string" />
+      <xs:element name="updatePriorityLists" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="priorityList" nillable="true" type="tns:entityPriority" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="entityPriority">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="priority" type="tns:priorityLevel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePolicyExResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPolicyDataEx">
+    <xs:sequence>
+      <xs:element name="policyId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPolicyDataExResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:policyDataEx" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="policyDataEx">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="days" nillable="true" type="tns:day" />
+      <xs:element name="endHour" type="xs:int" />
+      <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="policyDescription" type="xs:string" />
+      <xs:element minOccurs="0" name="policyType" type="tns:policyType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="priorityList" nillable="true" type="tns:entityPriority" />
+      <xs:element name="reserveBudget" type="xs:int" />
+      <xs:element name="startHour" type="xs:int" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element name="threshold" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateServerPowerProfiles">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="enumerateServerPowerProfilesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:serverPowerProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="serverPowerProfile">
+    <xs:sequence>
+      <xs:element name="chips" type="xs:int" />
+      <xs:element name="cores" type="xs:int" />
+      <xs:element minOccurs="0" name="cpuDescription" type="xs:string" />
+      <xs:element name="cpuFrequency" type="xs:int" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element name="idlePower" type="xs:int" />
+      <xs:element name="memory" type="xs:int" />
+      <xs:element minOccurs="0" name="model" type="xs:string" />
+      <xs:element name="nodes" type="xs:int" />
+      <xs:element name="peakPower" type="xs:int" />
+      <xs:element name="threads" type="xs:int" />
+      <xs:element minOccurs="0" name="vendor" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setPolicyState">
+    <xs:sequence>
+      <xs:element name="policyId" type="xs:int" />
+      <xs:element name="enable" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setPolicyStateResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="startPowerSaving">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="startPowerSavingResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeServerPowerProfile">
+    <xs:sequence>
+      <xs:element name="profileId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeServerPowerProfileResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getConnectorPropertySet">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="uname" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getConnectorPropertySetResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:propertyEx" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="propertyEx">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="options" nillable="true" type="tns:option" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="option">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="type" type="tns:optionType" />
+      <xs:element minOccurs="0" name="value" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateNetworkDevicePowerProfiles">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="enumerateNetworkDevicePowerProfilesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:networkDevicePowerProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="networkDevicePowerProfile">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="model" type="xs:string" />
+      <xs:element minOccurs="0" name="otherPowerInfo" type="xs:string" />
+      <xs:element minOccurs="0" name="series" type="xs:string" />
+      <xs:element name="typicalPower" type="xs:int" />
+      <xs:element minOccurs="0" name="vendor" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOn">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="entityIds" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOnResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="defineNotification">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="eventType" type="tns:customEventType" />
+      <xs:element minOccurs="0" name="conditionOperator" type="tns:conditionOperator" />
+      <xs:element name="threshold" type="xs:int" />
+      <xs:element name="evalPeriod" type="xs:int" />
+      <xs:element minOccurs="0" name="notificationDescription" type="xs:string" />
+      <xs:element name="enabled" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="defineNotificationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getQueryAggregationPeriodList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="queryType" type="tns:queryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getQueryAggregationPeriodListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:aggregationPeriod" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="aggregationPeriod">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="end" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="start" type="xs:dateTime" />
+      <xs:element name="value" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateCustomEvents">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateCustomEventsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setPolicyExHastily">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="policyType" type="tns:policyType" />
+      <xs:element name="threshold" type="xs:int" />
+      <xs:element name="reserveBudget" type="xs:int" />
+      <xs:element minOccurs="0" name="policyDescription" type="xs:string" />
+      <xs:element name="enabled" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="priorityList" nillable="true" type="tns:entityPriority" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setPolicyExHastilyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="isPolicyActive">
+    <xs:sequence>
+      <xs:element name="policyId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="isPolicyActiveResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setPolicyStateHastily">
+    <xs:sequence>
+      <xs:element name="policyId" type="xs:int" />
+      <xs:element name="enable" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setPolicyStateHastilyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setPolicyEx">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="policyType" type="tns:policyType" />
+      <xs:element name="threshold" type="xs:int" />
+      <xs:element name="reserveBudget" type="xs:int" />
+      <xs:element minOccurs="0" name="policyDescription" type="xs:string" />
+      <xs:element name="enabled" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="priorityList" nillable="true" type="tns:entityPriority" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setPolicyExResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="stopCollectingPowerDistribution">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="stopCollectingPowerDistributionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNetworkDevicePowerProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="networkDevicePowerProfile" type="tns:networkDevicePowerProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNetworkDevicePowerProfileResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="entityType" type="tns:entityType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="properties" nillable="true" type="tns:property" />
+      <xs:element name="forceAddition" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addEntityResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateStorageDevicePowerProfiles">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="enumerateStorageDevicePowerProfilesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:storageDevicePowerProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="storageDevicePowerProfile">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="model" type="xs:string" />
+      <xs:element minOccurs="0" name="otherPowerInfo" type="xs:string" />
+      <xs:element minOccurs="0" name="series" type="xs:string" />
+      <xs:element name="typicalPower" type="xs:int" />
+      <xs:element minOccurs="0" name="vendor" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removePowerModel">
+    <xs:sequence>
+      <xs:element name="modelId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removePowerModelResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getRealTimeComponentFaults">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRealTimeComponentFaultsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:componentFault" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="componentFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="componentName" type="xs:string" />
+      <xs:element minOccurs="0" name="faultMessage" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="startCollectingPowerDistribution">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="startCollectingPowerDistributionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEntityProperty">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="propertyName" type="tns:entityProperty" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEntityPropertyResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumeratePowerModels">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="enumeratePowerModelsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:modelInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modelInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element name="dimension" type="xs:int" />
+      <xs:element name="modelId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setLocationInfo">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="info" type="tns:locationInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="locationInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dataCenterName" type="xs:string" />
+      <xs:element minOccurs="0" name="roomName" type="xs:string" />
+      <xs:element minOccurs="0" name="aisleName" type="xs:string" />
+      <xs:element minOccurs="0" name="rackName" type="xs:string" />
+      <xs:element minOccurs="0" name="chassisName" type="xs:string" />
+      <xs:element name="rackSlot" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setLocationInfoResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="updateServerPowerProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="serverPowerProfile" type="tns:serverPowerProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateServerPowerProfileResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRealTimeSensorData">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRealTimeSensorDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:genericSensorData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="genericSensorData">
+    <xs:sequence>
+      <xs:element name="sensorEntityId" type="xs:int" />
+      <xs:element minOccurs="0" name="sensorName" type="xs:string" />
+      <xs:element name="sensorReading" type="xs:double" />
+      <xs:element minOccurs="0" name="unit" type="xs:string" />
+      <xs:element name="status" type="xs:int" />
+      <xs:element name="stateUnavailable" type="xs:boolean" />
+      <xs:element name="sensorType" type="xs:int" />
+      <xs:element name="readingType" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateNotifications">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateNotificationsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reconnectEntity">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reconnectEntityResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resetActiveIdlePowerEstimation">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resetActiveIdlePowerEstimationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="associateInbandNode">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="properties" nillable="true" type="tns:property" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="associateInbandNodeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumeratePolicies">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumeratePoliciesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPowerDistribution">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPowerDistributionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:powerDistributionInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerDistributionInfo">
+    <xs:sequence>
+      <xs:element name="duration" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="pdDatas" nillable="true" type="tns:powerDistributionData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerDistributionData">
+    <xs:sequence>
+      <xs:element name="lowerbound" type="xs:long" />
+      <xs:element name="proportion" type="xs:double" />
+      <xs:element name="upperbound" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getImmediateLogicalPredecessors">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getImmediateLogicalPredecessorsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateEventHandlers">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="enumerateEventHandlersResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSensorData">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSensorDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:sensorData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sensorData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="cpuTempMarginSensorData" nillable="true" type="tns:sensorRawData" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="cpuTempSensorData" nillable="true" type="tns:sensorRawData" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="iohTempMarginSensorData" nillable="true" type="tns:sensorRawData" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="iohTempSensorData" nillable="true" type="tns:sensorRawData" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="memTempMarginSensorData" nillable="true" type="tns:sensorRawData" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="memTempSensorData" nillable="true" type="tns:sensorRawData" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="outletTempSensorData" nillable="true" type="tns:sensorRawData" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="pchTempSensorData" nillable="true" type="tns:sensorRawData" />
+      <xs:element name="period" type="xs:int" />
+      <xs:element minOccurs="0" name="time" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sensorRawData">
+    <xs:sequence>
+      <xs:element name="instanceId" type="xs:int" />
+      <xs:element name="value" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removePolicyHastily">
+    <xs:sequence>
+      <xs:element name="policyId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removePolicyHastilyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNotificationState">
+    <xs:sequence>
+      <xs:element name="notificationId" type="xs:int" />
+      <xs:element name="enable" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNotificationStateResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getUtilizationMetrics">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="entityIds" nillable="true" type="xs:int" />
+      <xs:element name="percentile" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getUtilizationMetricsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:utilizationMetric" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="utilizationMetric">
+    <xs:sequence>
+      <xs:element name="averageUtil" type="xs:double" />
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element name="percentileUtil" type="xs:double" />
+      <xs:element name="sampleNumber" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEventState">
+    <xs:sequence>
+      <xs:element name="eventId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEventStateResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPECBladeInfo">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element name="needRefresh" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPECBladeInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:pecBladeInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pecBladeInfo">
+    <xs:sequence>
+      <xs:element name="slotNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="chassisServiceTag" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unsubscribePredefinedEvent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eventTypes" nillable="true" type="tns:predefinedEventType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unsubscribePredefinedEventResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addStorageDevicePowerProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="storageDevicePowerProfile" type="tns:storageDevicePowerProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addStorageDevicePowerProfileResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="defineCustomEvent">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="eventType" type="tns:customEventType" />
+      <xs:element minOccurs="0" name="conditionOperator" type="tns:conditionOperator" />
+      <xs:element name="threshold" type="xs:int" />
+      <xs:element name="evalPeriod" type="xs:int" />
+      <xs:element minOccurs="0" name="eventDescription" type="xs:string" />
+      <xs:element name="enabled" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="defineCustomEventResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLatestMetricData">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="metricType" type="tns:metricType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLatestMetricDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:rawPtData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="subscribeEventHandler">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="url" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="subscribeEventHandlerResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOffServer">
+    <xs:sequence>
+      <xs:element name="serverId" type="xs:int" />
+      <xs:element minOccurs="0" name="type" type="tns:powerOffOption" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOffServerResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerCycleServerWithCredential">
+    <xs:sequence>
+      <xs:element name="serverId" type="xs:int" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerCycleServerWithCredentialResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getVersion">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getVersionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="evaluateLowUtilizationServer">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="evaluateLowUtilizationServerResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:evaluationResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="evaluationResult">
+    <xs:sequence>
+      <xs:element name="averageUtilization" type="xs:double" />
+      <xs:element name="evaluationScore" type="xs:double" />
+      <xs:element name="ninetyNinePercentileUtilization" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPSUPower">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPSUPowerResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:realTimePSUData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="realTimePSUData">
+    <xs:sequence>
+      <xs:element name="powerData" type="xs:int" />
+      <xs:element minOccurs="0" name="time" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="exportHierarchy">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="filePath" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="exportHierarchyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setGlobalProperty">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="property" type="tns:globalProperty" />
+      <xs:element minOccurs="0" name="value" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setGlobalPropertyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="disassociateEntity">
+    <xs:sequence>
+      <xs:element name="groupId" type="xs:int" />
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="disassociateEntityResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="identifyEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="connectName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="properties" nillable="true" type="tns:property" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="identifyEntityResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:entityDiscoverInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="entityDiscoverInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="address" type="xs:string" />
+      <xs:element minOccurs="0" name="assetTag" type="xs:string" />
+      <xs:element minOccurs="0" name="connectorName" type="xs:string" />
+      <xs:element minOccurs="0" name="deviceSize" type="xs:string" />
+      <xs:element minOccurs="0" name="deviceType" type="xs:string" />
+      <xs:element minOccurs="0" name="distinguishedName" type="xs:string" />
+      <xs:element minOccurs="0" name="macAddress" type="xs:string" />
+      <xs:element minOccurs="0" name="model" type="xs:string" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="nodeCaps" type="xs:string" />
+      <xs:element minOccurs="0" name="otherInfo" type="xs:string" />
+      <xs:element minOccurs="0" name="platformId" type="xs:string" />
+      <xs:element minOccurs="0" name="port" type="xs:string" />
+      <xs:element minOccurs="0" name="serialNumber" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNotificationState">
+    <xs:sequence>
+      <xs:element name="notificationId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNotificationStateResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNextRawData">
+    <xs:sequence>
+      <xs:element name="enumerationHandle" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNextRawDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:enumerationRawData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeEntity">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element name="delCollectedData" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeEntityResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateEntitiesWithDetailsRecursively">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="entityType" type="tns:entityType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateEntitiesWithDetailsRecursivelyResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:entityDetailedInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="entityDetailedInfo">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="entityProperty" nillable="true" type="tns:property" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removePolicy">
+    <xs:sequence>
+      <xs:element name="policyId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removePolicyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOnServerWithCredential">
+    <xs:sequence>
+      <xs:element name="serverId" type="xs:int" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOnServerWithCredentialResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getQueryData">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="queryType" type="tns:queryType" />
+      <xs:element minOccurs="0" name="aggregationLevel" type="tns:aggregationLevel" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      <xs:element name="aggPeriod" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getQueryDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:enumerationData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getOutletState">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getOutletStateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRealTimePduData">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRealTimePduDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:realTimePduData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="realTimePduData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="humiditySensorReading" nillable="true" type="tns:pduSensorData" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="outletData" nillable="true" type="tns:pduOutletData" />
+      <xs:element name="outletNumber" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="phaseData" nillable="true" type="tns:pduPhaseData" />
+      <xs:element name="power" type="xs:int" />
+      <xs:element name="powerUnitDivisor" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="temperatureSensorReading" nillable="true" type="tns:pduSensorData" />
+      <xs:element minOccurs="0" name="time" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pduSensorData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="serialNumber" type="xs:string" />
+      <xs:element name="value" type="xs:int" />
+      <xs:element name="valueUnitDivisor" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pduOutletData">
+    <xs:sequence>
+      <xs:element name="index" type="xs:int" />
+      <xs:element name="load" type="xs:int" />
+      <xs:element name="outletLoadUnitDivisor" type="xs:int" />
+      <xs:element name="outletPowerUnitDivisor" type="xs:int" />
+      <xs:element name="outletVoltageUnitDivisor" type="xs:int" />
+      <xs:element name="power" type="xs:int" />
+      <xs:element minOccurs="0" name="state" type="xs:string" />
+      <xs:element name="voltage" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pduPhaseData">
+    <xs:sequence>
+      <xs:element name="load" type="xs:int" />
+      <xs:element name="phaseLoadUnitDivisor" type="xs:int" />
+      <xs:element name="phaseVoltageUnitDivisor" type="xs:int" />
+      <xs:element name="voltage" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="discoverEntities">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="startIP" type="xs:string" />
+      <xs:element minOccurs="0" name="endIP" type="xs:string" />
+      <xs:element minOccurs="0" name="netMask" type="xs:string" />
+      <xs:element minOccurs="0" name="protocolType" type="tns:protocolType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="properties" nillable="true" type="tns:property" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="discoverEntitiesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:entityDiscoverInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNotificationData">
+    <xs:sequence>
+      <xs:element name="notificationId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNotificationDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:customEventData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeNetworkDevicePowerProfile">
+    <xs:sequence>
+      <xs:element name="profileId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeNetworkDevicePowerProfileResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importHierarchy">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="filePath" type="xs:string" />
+      <xs:element name="forceAddition" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="importHierarchyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateEntitiesWithDetails">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="entityType" type="tns:entityType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateEntitiesWithDetailsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:entityDetailedInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="submitSecretKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="base64key" type="xs:string" />
+      <xs:element minOccurs="0" name="algorithm" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="submitSecretKeyResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMetricAggregationPeriodList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="metricType" type="tns:metricType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMetricAggregationPeriodListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:aggregationPeriod" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setEventState">
+    <xs:sequence>
+      <xs:element name="eventId" type="xs:int" />
+      <xs:element name="enable" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setEventStateResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="detectEntities">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="startIP" type="xs:string" />
+      <xs:element minOccurs="0" name="endIP" type="xs:string" />
+      <xs:element minOccurs="0" name="netMarsk" type="xs:string" />
+      <xs:element minOccurs="0" name="protocolType" type="tns:protocolType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="properties" nillable="true" type="tns:property" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="detectEntitiesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:entityDetectInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="entityDetectInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="address" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEnclosureAndBladeInfo">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEnclosureAndBladeInfoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:enclosureBladeInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enclosureBladeInfo">
+    <xs:sequence>
+      <xs:element name="slotNumberinChassis" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="blades" nillable="true" type="tns:bladeInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bladeInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="serviceTag" type="xs:string" />
+      <xs:element minOccurs="0" name="generation" type="xs:string" />
+      <xs:element minOccurs="0" name="slotName" type="xs:string" />
+      <xs:element minOccurs="0" name="IPAddress" type="xs:string" />
+      <xs:element minOccurs="0" name="MACAddress" type="xs:string" />
+      <xs:element minOccurs="0" name="model" type="xs:string" />
+      <xs:element minOccurs="0" name="hostName" type="xs:string" />
+      <xs:element minOccurs="0" name="dnsName" type="xs:string" />
+      <xs:element name="masterSlotNumber" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="slotNumber" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="subSlotNumber" type="xs:string" />
+      <xs:element minOccurs="0" name="distinguishedName" type="xs:string" />
+      <xs:element minOccurs="0" name="nodeID" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeStorageDevicePowerProfile">
+    <xs:sequence>
+      <xs:element name="profileId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeStorageDevicePowerProfileResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getGlobalProperty">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="property" type="tns:globalProperty" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getGlobalPropertyResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resetServerWithCredential">
+    <xs:sequence>
+      <xs:element name="serverId" type="xs:int" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resetServerWithCredentialResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dumpMeasurementData">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="queryType" type="tns:queryType" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dumpMeasurementDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:enumerationRawData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setPolicy">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="policyType" type="tns:policyType" />
+      <xs:element name="threshold" type="xs:int" />
+      <xs:element minOccurs="0" name="policyDescription" type="xs:string" />
+      <xs:element name="enabled" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="lowPriorityList" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="highPriorityList" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setPolicyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateWorkloadIntensity">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element name="workload" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateWorkloadIntensityResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getWorkloadPattern">
+    <xs:sequence>
+      <xs:element name="serverId" type="xs:int" />
+      <xs:element name="aggPeriod" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getWorkloadPatternResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:workloadPattern" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="workloadPattern">
+    <xs:sequence>
+      <xs:element name="avgCPUUsed" type="xs:int" />
+      <xs:element name="avgIOUsed" type="xs:int" />
+      <xs:element name="avgMemoryUsed" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateCustomEvent">
+    <xs:sequence>
+      <xs:element name="eventId" type="xs:int" />
+      <xs:element name="threshold" type="xs:int" />
+      <xs:element name="evalPeriod" type="xs:int" />
+      <xs:element minOccurs="0" name="eventDescription" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateCustomEventResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getServerComponentTemperatureHealthStatus">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getServerComponentTemperatureHealthStatusResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:temperatureHealthSensorData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="temperatureHealthSensorData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="component" type="xs:string" />
+      <xs:element minOccurs="0" name="sensorName" type="xs:string" />
+      <xs:element name="sensorReading" type="xs:int" />
+      <xs:element name="threshold" type="xs:int" />
+      <xs:element minOccurs="0" name="valueType" type="tns:sensorReadingValueType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addServerPowerProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="serverPowerProfile" type="tns:serverPowerProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addServerPowerProfileResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOffServerWithCredential">
+    <xs:sequence>
+      <xs:element name="serverId" type="xs:int" />
+      <xs:element minOccurs="0" name="type" type="tns:powerOffOption" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOffServerWithCredentialResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRealTimeUpsData">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRealTimeUpsDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:realTimeUpsData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="realTimeUpsData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="bypassTable" nillable="true" type="tns:upsBypassEntry" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="inputTable" nillable="true" type="tns:upsInputEntry" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="outputTable" nillable="true" type="tns:upsOutputEntry" />
+      <xs:element name="UPSBypassFrequency" type="xs:int" />
+      <xs:element name="UPSEstimatedChargeRemaining" type="xs:int" />
+      <xs:element name="UPSEstimatedMinutesRemaining" type="xs:int" />
+      <xs:element name="UPSOutputFrequency" type="xs:int" />
+      <xs:element minOccurs="0" name="UPSOutputSource" type="tns:upsOutputSource" />
+      <xs:element name="UPSSecondsOnBattery" type="xs:int" />
+      <xs:element name="upsBatterytemperature" type="xs:int" />
+      <xs:element name="upsMaxLoad" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="upsBypassEntry">
+    <xs:sequence>
+      <xs:element name="current" type="xs:int" />
+      <xs:element name="index" type="xs:int" />
+      <xs:element name="power" type="xs:int" />
+      <xs:element name="voltage" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="upsInputEntry">
+    <xs:sequence>
+      <xs:element name="current" type="xs:int" />
+      <xs:element name="frequency" type="xs:int" />
+      <xs:element name="index" type="xs:int" />
+      <xs:element name="power" type="xs:int" />
+      <xs:element name="voltage" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="upsOutputEntry">
+    <xs:sequence>
+      <xs:element name="current" type="xs:int" />
+      <xs:element name="index" type="xs:int" />
+      <xs:element name="percentLoad" type="xs:int" />
+      <xs:element name="power" type="xs:int" />
+      <xs:element name="voltage" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="predictPower">
+    <xs:sequence>
+      <xs:element name="modelId" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="utilizationData" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="predictPowerResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="findEntitiesWithDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="property" type="tns:entityProperty" />
+      <xs:element minOccurs="0" name="searchString" type="xs:string" />
+      <xs:element name="fullMatch" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="findEntitiesWithDetailsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:entityDetailedInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getObservedMaxPower">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getObservedMaxPowerResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getOverCoolingIndicator">
+    <xs:sequence>
+      <xs:element name="groupId" type="xs:int" />
+      <xs:element name="allowedTemperature" type="xs:int" />
+      <xs:element name="recommendedTemperature" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getOverCoolingIndicatorResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMetricData">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="metricType" type="tns:metricType" />
+      <xs:element minOccurs="0" name="aggregationLevel" type="tns:aggregationLevel" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      <xs:element name="aggPeriod" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getMetricDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:enumerationData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="associateEntity">
+    <xs:sequence>
+      <xs:element name="groupId" type="xs:int" />
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="associateEntityResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEventHandler">
+    <xs:sequence>
+      <xs:element name="handlerId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEventHandlerResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resetObservedMaxPower">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="resetObservedMaxPowerResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="executeCommand">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="command" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arguments" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="executeCommandResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="evaluateServerForWorkload">
+    <xs:sequence>
+      <xs:element name="serverId" type="xs:int" />
+      <xs:element minOccurs="0" name="pattern" type="tns:workloadPattern" />
+      <xs:element name="aggPeriod" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="evaluateServerForWorkloadResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteSecretKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="keyHandle" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteSecretKeyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCollectionState">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getCollectionStateResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOffOutlet">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element name="port" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOffOutletResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateStorageDevicePowerProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="storageDevicePowerProfile" type="tns:storageDevicePowerProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateStorageDevicePowerProfileResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLatestQueryData">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="queryType" type="tns:queryType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLatestQueryDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:rawPtData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="stopPowerSaving">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="stopPowerSavingResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="maintainDB">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="maintainDBResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="setLoadfactors">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="loadfactors" type="tns:loadfactors" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="loadfactors">
+    <xs:sequence>
+      <xs:element name="CPUVal" type="xs:int" />
+      <xs:element name="MemVal" type="xs:int" />
+      <xs:element name="StorageVal" type="xs:int" />
+      <xs:element name="NetVal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setLoadfactorsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clearNodePolicies">
+    <xs:sequence>
+      <xs:element name="nodeId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clearNodePoliciesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="identifyEntityByProtocol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="protocolType" type="tns:protocolType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="properties" nillable="true" type="tns:property" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="identifyEntityByProtocolResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:entityDiscoverInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateNotification">
+    <xs:sequence>
+      <xs:element name="notificationId" type="xs:int" />
+      <xs:element name="threshold" type="xs:int" />
+      <xs:element name="evalPeriod" type="xs:int" />
+      <xs:element minOccurs="0" name="notificationDescription" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateNotificationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPolicyData">
+    <xs:sequence>
+      <xs:element name="policyId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPolicyDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:policyData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="policyData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="days" nillable="true" type="tns:day" />
+      <xs:element name="endHour" type="xs:int" />
+      <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="highPriorityList" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="lowPriorityList" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="policyDescription" type="xs:string" />
+      <xs:element minOccurs="0" name="policyType" type="tns:policyType" />
+      <xs:element name="startHour" type="xs:int" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element name="threshold" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unsubscribeEventHandler">
+    <xs:sequence>
+      <xs:element name="handlerId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unsubscribeEventHandlerResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="analyzeCoolingStatus">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="analyzeCoolingStatusResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:coolingStatusInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="coolingStatusInfo">
+    <xs:sequence>
+      <xs:element name="aggressiveChillerPowerSavingEstimated" type="xs:double" />
+      <xs:element name="aggressiveChillerPowerSavingPercentageEstimated" type="xs:double" />
+      <xs:element name="aggressiveTemperatureRaise" type="xs:int" />
+      <xs:element minOccurs="0" name="benefits" type="xs:string" />
+      <xs:element name="chillerPowerEstimated" type="xs:double" />
+      <xs:element name="conservativeChillerPowerSavingEstimated" type="xs:double" />
+      <xs:element name="conservativeChillerPowerSavingPercentageEstimated" type="xs:double" />
+      <xs:element name="conservativeTemperatureRaise" type="xs:int" />
+      <xs:element name="htaChillerPowerSavingEstimated" type="xs:double" />
+      <xs:element name="htaChillerPowerSavingPercentageEstimated" type="xs:double" />
+      <xs:element name="htaTemperatureRaise" type="xs:int" />
+      <xs:element minOccurs="0" name="possibleActions" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="prominentData" nillable="true" type="tns:ptData" />
+      <xs:element minOccurs="0" name="severity" type="tns:coolingStatusSeverity" />
+      <xs:element minOccurs="0" name="status" type="tns:coolingStatus" />
+      <xs:element minOccurs="0" name="statusDescription" type="xs:string" />
+      <xs:element minOccurs="0" name="suggestion" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeCustomEvent">
+    <xs:sequence>
+      <xs:element name="eventId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeCustomEventResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSELInText">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element name="maxNumber" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSELInTextResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:selData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="selData">
+    <xs:sequence>
+      <xs:element name="recordNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="severity" type="xs:string" />
+      <xs:element minOccurs="0" name="time" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOnServer">
+    <xs:sequence>
+      <xs:element name="serverId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerOnServerResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEntityProperties">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEntityPropertiesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:property" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBatchQueryData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="entityIds" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="queryType" type="tns:queryType" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      <xs:element name="aggPeriod" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBatchQueryDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:enumerationData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLoadfactors">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLoadfactorsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:loadfactors" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBatchMetricData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="entityIds" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="metricType" type="tns:metricType" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      <xs:element name="aggPeriod" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBatchMetricDataResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:enumerationData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="subscribePredefinedEvent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="eventTypes" nillable="true" type="tns:predefinedEventType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="subscribePredefinedEventResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePolicy">
+    <xs:sequence>
+      <xs:element name="policyId" type="xs:int" />
+      <xs:element name="threshold" type="xs:int" />
+      <xs:element minOccurs="0" name="policyDescription" type="xs:string" />
+      <xs:element name="updatePriorityLists" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="lowPriorityList" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="highPriorityList" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePolicyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rankServersForWorkload">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pattern" type="tns:workloadPattern" />
+      <xs:element name="aggPeriod" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rankServersForWorkloadResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:serverScore" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="serverScore">
+    <xs:sequence>
+      <xs:element name="score" type="xs:double" />
+      <xs:element name="serverId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateEntitiesRecursively">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="entityType" type="tns:entityType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateEntitiesRecursivelyResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addPowerModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="powerUtilizationData" nillable="true" type="tns:powerUtilizationData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="powerUtilizationData">
+    <xs:sequence>
+      <xs:element name="power" type="xs:double" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="utilizationData" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addPowerModelResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rediscoverNodeCapabilities">
+    <xs:sequence>
+      <xs:element name="nodeId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rediscoverNodeCapabilitiesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="evaluateServerForMigration">
+    <xs:sequence>
+      <xs:element name="scr" type="xs:int" />
+      <xs:element name="dst" type="xs:int" />
+      <xs:element name="aggPeriod" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="evaluateServerForMigrationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeNotification">
+    <xs:sequence>
+      <xs:element name="notificationId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeNotificationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getActiveIdlePowerEstimation">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getActiveIdlePowerEstimationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setEntityProperties">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="properties" nillable="true" type="tns:property" />
+      <xs:element name="forceSetting" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setEntityPropertiesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePolicyExHastily">
+    <xs:sequence>
+      <xs:element name="policyId" type="xs:int" />
+      <xs:element name="threshold" type="xs:int" />
+      <xs:element name="reserveBudget" type="xs:int" />
+      <xs:element minOccurs="0" name="policyDescription" type="xs:string" />
+      <xs:element name="updatePriorityLists" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="priorityList" nillable="true" type="tns:entityPriority" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePolicyExHastilyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateNetworkDevicePowerProfile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="networkDevicePowerProfile" type="tns:networkDevicePowerProfile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateNetworkDevicePowerProfileResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPredefinedEventTypes">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getPredefinedEventTypesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:predefinedEventType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePerformanceFeedback">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element name="feedback" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePerformanceFeedbackResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPhysicalParent">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPhysicalParentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getConnectorList">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getConnectorListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:connectorInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="connectorInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element minOccurs="0" name="displayName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="extendPoints" nillable="true" type="tns:extendPoint" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" name="uname" type="xs:string" />
+      <xs:element minOccurs="0" name="version" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="findEntities">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="property" type="tns:entityProperty" />
+      <xs:element minOccurs="0" name="searchString" type="xs:string" />
+      <xs:element name="fullMatch" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="findEntitiesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateEntities">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="entityType" type="tns:entityType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="enumerateEntitiesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="schedulePolicy">
+    <xs:sequence>
+      <xs:element name="policyId" type="xs:int" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      <xs:element name="startHour" type="xs:int" />
+      <xs:element name="endHour" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="days" nillable="true" type="tns:day" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="schedulePolicyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rediscoverEntity">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rediscoverEntityResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getActionLogRecords">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="logType" type="tns:actionLogType" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getActionLogRecordsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPolicyHistory">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+      <xs:element minOccurs="0" name="historyType" type="tns:historyType" />
+      <xs:element minOccurs="0" name="aggregationLevel" type="tns:aggregationLevel" />
+      <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPolicyHistoryResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:enumerationData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="launchPTU">
+    <xs:sequence>
+      <xs:element name="entityId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="launchPTUResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:byte" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rankServersForMigration">
+    <xs:sequence>
+      <xs:element name="scr" type="xs:int" />
+      <xs:element name="aggPeriod" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rankServersForMigrationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="tns:serverScore" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="day">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SUNDAY" />
+      <xs:enumeration value="MONDAY" />
+      <xs:enumeration value="TUESDAY" />
+      <xs:enumeration value="WEDNESDAY" />
+      <xs:enumeration value="THURSDAY" />
+      <xs:enumeration value="FRIDAY" />
+      <xs:enumeration value="SATURDAY" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="queryType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MAX_PWR" />
+      <xs:enumeration value="AVG_PWR" />
+      <xs:enumeration value="MIN_PWR" />
+      <xs:enumeration value="MAX_CPU_PWR" />
+      <xs:enumeration value="AVG_CPU_PWR" />
+      <xs:enumeration value="MIN_CPU_PWR" />
+      <xs:enumeration value="MAX_MEM_PWR" />
+      <xs:enumeration value="AVG_MEM_PWR" />
+      <xs:enumeration value="MIN_MEM_PWR" />
+      <xs:enumeration value="MAX_AVG_PWR" />
+      <xs:enumeration value="MIC_PWR" />
+      <xs:enumeration value="TOTAL_MAX_PWR" />
+      <xs:enumeration value="TOTAL_AVG_PWR" />
+      <xs:enumeration value="MAX_AVG_PWR_CAP" />
+      <xs:enumeration value="TOTAL_MAX_PWR_CAP" />
+      <xs:enumeration value="TOTAL_AVG_PWR_CAP" />
+      <xs:enumeration value="TOTAL_MIN_PWR" />
+      <xs:enumeration value="MIN_AVG_PWR" />
+      <xs:enumeration value="MAX_INLET_TEMP" />
+      <xs:enumeration value="AVG_INLET_TEMP" />
+      <xs:enumeration value="MIN_INLET_TEMP" />
+      <xs:enumeration value="INS_PWR" />
+      <xs:enumeration value="PDU_PWR" />
+      <xs:enumeration value="OBSV_MAX_PDU_PWR" />
+      <xs:enumeration value="CPU_USED" />
+      <xs:enumeration value="MEMORY_USED" />
+      <xs:enumeration value="IO_USED" />
+      <xs:enumeration value="NETWORK_USED" />
+      <xs:enumeration value="CUPS" />
+      <xs:enumeration value="ESTIMATED_CPU_USED" />
+      <xs:enumeration value="ESTIMATED_MEMORY_USED" />
+      <xs:enumeration value="ESTIMATED_DISK_USED" />
+      <xs:enumeration value="AVG_OUTLET_TEMP" />
+      <xs:enumeration value="AIRFLOW" />
+      <xs:enumeration value="ESTIMATED_PWR" />
+      <xs:enumeration value="CPU_UTIL" />
+      <xs:enumeration value="DISK_IO" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="powerOffOption">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SOFT_OFF" />
+      <xs:enumeration value="HARD_OFF" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="metricType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MNGED_NODES_ENERGY" />
+      <xs:enumeration value="MNGED_NODES_ENERGY_BILL" />
+      <xs:enumeration value="IT_EQPMNT_ENERGY" />
+      <xs:enumeration value="IT_EQPMNT_ENERGY_BILL" />
+      <xs:enumeration value="CALC_COOLING_ENERGY" />
+      <xs:enumeration value="CALC_COOLING_ENERGY_BILL" />
+      <xs:enumeration value="MNGED_NODES_PWR" />
+      <xs:enumeration value="IT_EQPMNT_PWR" />
+      <xs:enumeration value="MAX_AVG_IT_EQPMNT_PWR" />
+      <xs:enumeration value="CALC_COOLING_PWR" />
+      <xs:enumeration value="AVG_PWR_PER_DIMENSION" />
+      <xs:enumeration value="DERATED_PWR" />
+      <xs:enumeration value="INLET_TEMPERATURE_SPAN" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="entityType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NODE" />
+      <xs:enumeration value="ENCLOSURE" />
+      <xs:enumeration value="RACK" />
+      <xs:enumeration value="ROW" />
+      <xs:enumeration value="ROOM" />
+      <xs:enumeration value="DATACENTER" />
+      <xs:enumeration value="LOGICAL_GROUP" />
+      <xs:enumeration value="DCM_SERVER" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="entityProperty">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BMC_ADDRESS" />
+      <xs:enumeration value="BMC_USER" />
+      <xs:enumeration value="BMC_PASSWORD" />
+      <xs:enumeration value="BMC_KEY" />
+      <xs:enumeration value="BMC_MAC_ADDRESS" />
+      <xs:enumeration value="IPMI_CIPHER_SUITE" />
+      <xs:enumeration value="SNMP_ADDRESS" />
+      <xs:enumeration value="SNMP_PROTOCOL" />
+      <xs:enumeration value="SNMP_COMMUNITY_STRING" />
+      <xs:enumeration value="SNMP_USER" />
+      <xs:enumeration value="SNMP_AUTHENTICATION_PASSWORD" />
+      <xs:enumeration value="SNMP_ENCRYPTION_PASSWORD" />
+      <xs:enumeration value="PDU_MAC_ADDRESS" />
+      <xs:enumeration value="SSH_ADDRESS" />
+      <xs:enumeration value="SSH_USER" />
+      <xs:enumeration value="SSH_PASSWORD" />
+      <xs:enumeration value="SSH_PORT" />
+      <xs:enumeration value="HTTPS_ADDRESS" />
+      <xs:enumeration value="HTTPS_PORT" />
+      <xs:enumeration value="HTTP_BASIC_USER" />
+      <xs:enumeration value="HTTP_BASIC_PASSWORD" />
+      <xs:enumeration value="UCS_USER" />
+      <xs:enumeration value="UCS_PASSWORD" />
+      <xs:enumeration value="DISTINGUISHED_NAME" />
+      <xs:enumeration value="DCM_SERVER_ADDRESS" />
+      <xs:enumeration value="DCM_SERVER_PORT" />
+      <xs:enumeration value="EVENT_HANDLER_HOST_ADDRESS" />
+      <xs:enumeration value="EVENT_HANDLER_PORT" />
+      <xs:enumeration value="ENABLE_TLS" />
+      <xs:enumeration value="SERVER_POWER_SAMPLING_PERIOD" />
+      <xs:enumeration value="SERVER_THERMAL_SAMPLING_PERIOD" />
+      <xs:enumeration value="CONNECTOR_NAME" />
+      <xs:enumeration value="DCM_SERVER_ID" />
+      <xs:enumeration value="NAME" />
+      <xs:enumeration value="DESCRIPTION" />
+      <xs:enumeration value="CAPABILITIES" />
+      <xs:enumeration value="LOCATION" />
+      <xs:enumeration value="DIMENSION" />
+      <xs:enumeration value="ENTITY_TYPE" />
+      <xs:enumeration value="NAMEPLATE_PWR" />
+      <xs:enumeration value="DERATED_PWR" />
+      <xs:enumeration value="NAMEPLATE_PWR_UNMNGD_EQPMNT" />
+      <xs:enumeration value="PDU_PWR_LIMIT" />
+      <xs:enumeration value="NODE_STATUS" />
+      <xs:enumeration value="ENCLOSURE_STATUS" />
+      <xs:enumeration value="NODE_POLICY_STATUS" />
+      <xs:enumeration value="NODE_PWR_LIMIT" />
+      <xs:enumeration value="REPORT_INLET_TEMP" />
+      <xs:enumeration value="NODE_IDRAC_TYPE" />
+      <xs:enumeration value="BLADE_FORM_FACTOR" />
+      <xs:enumeration value="CUSTOMIZED_PROPERTY" />
+      <xs:enumeration value="CUSTOMIZED_INFO" />
+      <xs:enumeration value="INBAND_OS_TYPE" />
+      <xs:enumeration value="INBAND_ADDRESS" />
+      <xs:enumeration value="INBAND_USERNAME" />
+      <xs:enumeration value="INBAND_PASSWORD" />
+      <xs:enumeration value="INBAND_SSH_PORT" />
+      <xs:enumeration value="PLATFORM_ID" />
+      <xs:enumeration value="DEVICE_TYPE" />
+      <xs:enumeration value="DEVICE_MODEL" />
+      <xs:enumeration value="AUTHENTICATE_ENTITY" />
+      <xs:enumeration value="MIN_POWER_DRAW" />
+      <xs:enumeration value="MAX_POWER_DRAW" />
+      <xs:enumeration value="REQUESTED_TIMEOUT" />
+      <xs:enumeration value="AGGREGATION_MULTIPLIER" />
+      <xs:enumeration value="UUID" />
+      <xs:enumeration value="ENCLOSURE_ADDRESS" />
+      <xs:enumeration value="ASSET_TAG" />
+      <xs:enumeration value="PWR_ESTIMATOR" />
+      <xs:enumeration value="GROUP_LIMIT_ON_ENCLOSURE" />
+      <xs:enumeration value="MGMT_CONSOLE_URL" />
+      <xs:enumeration value="IDRAC_TAG" />
+      <xs:enumeration value="MAX_PWR_BUDGET" />
+      <xs:enumeration value="MIN_PWR_BUDGET" />
+      <xs:enumeration value="SERVICE_TAG" />
+      <xs:enumeration value="PDU_PWR_AS_IT_EQPMNT_PWR" />
+      <xs:enumeration value="FIRMWARE_VERSION" />
+      <xs:enumeration value="MGMT_PROCESSOR_TYPE" />
+      <xs:enumeration value="TEMPERATURE_UPPER_LIMIT" />
+      <xs:enumeration value="SERIAL_NUMBER" />
+      <xs:enumeration value="HARD_CAPPING" />
+      <xs:enumeration value="BMC_GUID" />
+      <xs:enumeration value="EFFICIENT_LOWER_LIMIT" />
+      <xs:enumeration value="SNMP_PORT" />
+      <xs:enumeration value="TMM_LICENSE" />
+      <xs:enumeration value="SOL_INFO" />
+      <xs:enumeration value="SOL_SECRET" />
+      <xs:enumeration value="VNC_INFO" />
+      <xs:enumeration value="VNC_SECRET" />
+      <xs:enumeration value="MPCM_CAPABLE" />
+      <xs:enumeration value="MPCM_ENABLED" />
+      <xs:enumeration value="MPCM_REQUESTED" />
+      <xs:enumeration value="CAPABILITY_DISABLED" />
+      <xs:enumeration value="ORIGINAL_CAPABILITY" />
+      <xs:enumeration value="IDRAC_LOCATION" />
+      <xs:enumeration value="DEVICE_SIZE" />
+      <xs:enumeration value="OUTLET_NUM" />
+      <xs:enumeration value="PDU_RATING" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="conditionOperator">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="GREATER_THAN" />
+      <xs:enumeration value="LESS_THAN" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="customEventType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MAX_PWR" />
+      <xs:enumeration value="AVG_PWR" />
+      <xs:enumeration value="MIN_PWR" />
+      <xs:enumeration value="MAX_AVG_PWR" />
+      <xs:enumeration value="TOTAL_MAX_PWR" />
+      <xs:enumeration value="TOTAL_AVG_PWR" />
+      <xs:enumeration value="TOTAL_MIN_PWR" />
+      <xs:enumeration value="MIN_AVG_PWR" />
+      <xs:enumeration value="MAX_INLET_TEMP" />
+      <xs:enumeration value="AVG_INLET_TEMP" />
+      <xs:enumeration value="MIN_INLET_TEMP" />
+      <xs:enumeration value="AVG_WATTS_PER_DIMENSION" />
+      <xs:enumeration value="AVG_COOLING_PWR" />
+      <xs:enumeration value="INLET_TEMPERATURE_SPAN" />
+      <xs:enumeration value="TOTAL_AVG_PWR_CAP" />
+      <xs:enumeration value="IT_EQPMNT_PWR" />
+      <xs:enumeration value="CPU_TEMP" />
+      <xs:enumeration value="MEM_TEMP" />
+      <xs:enumeration value="PCH_TEMP" />
+      <xs:enumeration value="IOH_TEMP" />
+      <xs:enumeration value="OUTLET_TEMP" />
+      <xs:enumeration value="CPU_TEMP_MARGIN" />
+      <xs:enumeration value="MEM_TEMP_MARGIN" />
+      <xs:enumeration value="IOH_TEMP_MARGIN" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="priorityLevel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="LOW" />
+      <xs:enumeration value="MEDIUM" />
+      <xs:enumeration value="HIGH" />
+      <xs:enumeration value="CRITICAL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="policyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CUSTOM_PWR_LIMIT" />
+      <xs:enumeration value="MIN_PWR" />
+      <xs:enumeration value="MIN_PWR_ON_INLET_TEMP_TRIGGER" />
+      <xs:enumeration value="STATIC_PWR_LIMIT" />
+      <xs:enumeration value="CPU_PWR_LIMIT" />
+      <xs:enumeration value="MEM_PWR_LIMIT" />
+      <xs:enumeration value="PWR_EFFICIENT" />
+      <xs:enumeration value="MIC_PWR_LIMIT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="optionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ACCESS_MODE" />
+      <xs:enumeration value="MANDATORY" />
+      <xs:enumeration value="HIDDEN" />
+      <xs:enumeration value="DEFAULT" />
+      <xs:enumeration value="SELECTION" />
+      <xs:enumeration value="UNIQUE" />
+      <xs:enumeration value="INTERNAL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="predefinedEventType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="IPMI_PWR_UNIT" />
+      <xs:enumeration value="SNMP_PWR_UNIT" />
+      <xs:enumeration value="IPMI_PWR_SUPPLY" />
+      <xs:enumeration value="IPMI_PROCESSOR_THERMAL_TRIP" />
+      <xs:enumeration value="IPMI_FAN" />
+      <xs:enumeration value="BMC_SEL_REACHING_FULL_CAPACITY" />
+      <xs:enumeration value="BMC_SEL_AT_FULL_CAPACITY" />
+      <xs:enumeration value="ENTITY_PROPERTY_CHANGED" />
+      <xs:enumeration value="COMMUNICATION_WITH_NODE_FAILED" />
+      <xs:enumeration value="COMMUNICATION_WITH_NODE_RESTORED" />
+      <xs:enumeration value="INSUFFICIENT_NODE_PERMISSION" />
+      <xs:enumeration value="CONTROL_POLICY_CANNOT_BE_MAINTAINED" />
+      <xs:enumeration value="CANT_SET_NODE_EVENT" />
+      <xs:enumeration value="CONTROL_POLICY_APPLIED" />
+      <xs:enumeration value="CONTROL_POLICY_ENDED" />
+      <xs:enumeration value="INTERNAL_ERROR" />
+      <xs:enumeration value="CONFIGURATION_CHANGED" />
+      <xs:enumeration value="HIERARCHY_CHANGED" />
+      <xs:enumeration value="CONTROL_POLICY_CHANGED" />
+      <xs:enumeration value="CUSTOM_EVENT_CHANGED" />
+      <xs:enumeration value="EVENT_EVALUATION_FAILURE" />
+      <xs:enumeration value="COLLECTION_STATE_CHANGED" />
+      <xs:enumeration value="IMPORTHIERARCHY_COMPLETED" />
+      <xs:enumeration value="DB_MAINTENANCE_STARTING" />
+      <xs:enumeration value="DB_MAINTENANCE_ENDED" />
+      <xs:enumeration value="DB_CONNECTION_FAILED" />
+      <xs:enumeration value="DB_CONNECTION_RESTORED" />
+      <xs:enumeration value="CONTROL_POLICY_PRIORITY_CONFLICT" />
+      <xs:enumeration value="DCM_SERVER_CONNECTION_FAILED" />
+      <xs:enumeration value="DCM_SERVER_CONNECTION_RESTORED" />
+      <xs:enumeration value="CLOCK_NOT_SYNCHRONIZED" />
+      <xs:enumeration value="POWER_ON_MACHINE_FAILED" />
+      <xs:enumeration value="POWER_OFF_MACHINE_FAILED" />
+      <xs:enumeration value="DCM_SERVER_CONFLICT" />
+      <xs:enumeration value="CRITICAL_DATA_SYNCHRONIZATION_STARTING" />
+      <xs:enumeration value="CRITICAL_DATA_SYNCHRONIZATION_ENDED" />
+      <xs:enumeration value="NOTIFICATION_CHANGED" />
+      <xs:enumeration value="NOTIFICATION" />
+      <xs:enumeration value="SET_POLICY_TO_ENTITY_FAILED" />
+      <xs:enumeration value="REMOVE_POLICY_FROM_ENTITY_FAILED" />
+      <xs:enumeration value="COMMUNICATION_WITH_ENCLOSURE_FAILED" />
+      <xs:enumeration value="COMMUNICATION_WITH_ENCLOSURE_RESTORED" />
+      <xs:enumeration value="UPS_BAD_BATTERY" />
+      <xs:enumeration value="UPS_LOW_BATTERY" />
+      <xs:enumeration value="UPS_BAD_TEMPERATURE" />
+      <xs:enumeration value="UPS_BAD_INPUT" />
+      <xs:enumeration value="UPS_BAD_OUTPUT" />
+      <xs:enumeration value="UPS_OVERLOAD" />
+      <xs:enumeration value="UPS_ON_BYPASS" />
+      <xs:enumeration value="UPS_BAD_BYPASS" />
+      <xs:enumeration value="UPS_SHUTDOWN" />
+      <xs:enumeration value="UPS_CHARGE_FAILURE" />
+      <xs:enumeration value="UPS_FAN_FAILURE" />
+      <xs:enumeration value="UPS_COMMUNICATION_LOST" />
+      <xs:enumeration value="ENTITY_WITH_DUPLICATED_PLATFORMID" />
+      <xs:enumeration value="PDU_LOW_LOAD" />
+      <xs:enumeration value="PDU_HIGH_LOAD" />
+      <xs:enumeration value="PDU_OVERLOAD" />
+      <xs:enumeration value="PDU_OUTLET_ON" />
+      <xs:enumeration value="PDU_OUTLET_OFF" />
+      <xs:enumeration value="ENTITY_CAPABILITIES_CHANGED" />
+      <xs:enumeration value="PDU_OUTLET_LOW_LOAD" />
+      <xs:enumeration value="PDU_OUTLET_HIGH_LOAD" />
+      <xs:enumeration value="PDU_OUTLET_OVERLOAD" />
+      <xs:enumeration value="PLATFORM_OPERATION_FAILED" />
+      <xs:enumeration value="IPMI_TEST_EVENT" />
+      <xs:enumeration value="CMC_SNMP_EVENT" />
+      <xs:enumeration value="IDRAC_SNMP_EVENT" />
+      <xs:enumeration value="SERVER_COMPONENT_HIGH_TEMPERATURE" />
+      <xs:enumeration value="PDU_SENSOR_EVENT" />
+      <xs:enumeration value="COOLING_ANOMALY" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="globalProperty">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NODE_POWER_SAMPLING_FREQUENCY" />
+      <xs:enumeration value="NODE_POWER_MEASUREMENT_GRANULARITY" />
+      <xs:enumeration value="NODE_THERMAL_SAMPLING_FREQUENCY" />
+      <xs:enumeration value="NODE_THERMAL_MEASUREMENT_GRANULARITY" />
+      <xs:enumeration value="NODE_BMC_SEL_MONITORING_FREQUENCY" />
+      <xs:enumeration value="NODE_STATUS_MONITORING_FREQUENCY" />
+      <xs:enumeration value="ACTION_LOG_BACK_TRACKING_PERIOD" />
+      <xs:enumeration value="ACTION_LOG_MAX_ITEM_COUNT" />
+      <xs:enumeration value="APP_LOG_MAX_SIZE" />
+      <xs:enumeration value="APP_LOG_LEVEL" />
+      <xs:enumeration value="COOLING_MULT" />
+      <xs:enumeration value="COST_PER_KW_HR" />
+      <xs:enumeration value="TIME_UNTIL_DB_COMPRESSION" />
+      <xs:enumeration value="TIME_UNTIL_NODE_DATA_COMPRESSION" />
+      <xs:enumeration value="TIME_UNTIL_GROUP_DATA_COMPRESSION" />
+      <xs:enumeration value="MAX_NUM_RECORDS_INVOLVED" />
+      <xs:enumeration value="TIME_UNTIL_DB_DELETION" />
+      <xs:enumeration value="TIME_UNTIL_NODE_DATA_DELETION" />
+      <xs:enumeration value="TIME_UNTIL_GROUP_DATA_DELETION" />
+      <xs:enumeration value="DB_MAINTENANCE_HOUR" />
+      <xs:enumeration value="DB_STORE_MEASUREMENT" />
+      <xs:enumeration value="DB_STORE_TIER2_NODE_DATA_IN_CENTRAL" />
+      <xs:enumeration value="MONITORING_ACTIVE" />
+      <xs:enumeration value="SILENT_MODE" />
+      <xs:enumeration value="ENABLE_SENSOR_MONITORING" />
+      <xs:enumeration value="IDLE_SERVER_THRESHOLD" />
+      <xs:enumeration value="IDLE_BLADE_THRESHOLD" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="aggregationLevel">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SELF" />
+      <xs:enumeration value="NODE" />
+      <xs:enumeration value="ENCLOSURE" />
+      <xs:enumeration value="RACK" />
+      <xs:enumeration value="ROW" />
+      <xs:enumeration value="ROOM" />
+      <xs:enumeration value="DATACENTER" />
+      <xs:enumeration value="DCM_SERVER" />
+      <xs:enumeration value="IMMEDIATE_CHILDREN" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="protocolType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="IPMI" />
+      <xs:enumeration value="SNMPv1v2c" />
+      <xs:enumeration value="SNMPv3" />
+      <xs:enumeration value="WS_MAN" />
+      <xs:enumeration value="SSH" />
+      <xs:enumeration value="INBAND_PROTOCOL" />
+      <xs:enumeration value="HTTPS" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="sensorReadingValueType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ABSOLUTE" />
+      <xs:enumeration value="RELATIVE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="upsOutputSource">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OTHER" />
+      <xs:enumeration value="NONE" />
+      <xs:enumeration value="NORMAL" />
+      <xs:enumeration value="BYPASS" />
+      <xs:enumeration value="BATTERY" />
+      <xs:enumeration value="BOOSTER" />
+      <xs:enumeration value="REDUCER" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="coolingStatusSeverity">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CRITICAL" />
+      <xs:enumeration value="WARNING" />
+      <xs:enumeration value="NORMAL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="coolingStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="WELL_COOLED" />
+      <xs:enumeration value="HOT_OUTLIERS_DETECTED" />
+      <xs:enumeration value="HOTSPOTS_DETECTED" />
+      <xs:enumeration value="OVER_COOLED" />
+      <xs:enumeration value="LARGE_TEMPERATURE_SPAN" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="extendPoint">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NODE_MGMT" />
+      <xs:enumeration value="ENCLOSURE_MGMT" />
+      <xs:enumeration value="DCM_SERVER_MGMT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="actionLogType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ALL" />
+      <xs:enumeration value="EVENT_CHANGE" />
+      <xs:enumeration value="CONFIGURATION_CHANGE" />
+      <xs:enumeration value="HIERARCHY_CHANGE" />
+      <xs:enumeration value="CONTROL_POLICY_CHANGE" />
+      <xs:enumeration value="EXTERNAL_ACTION_SUCCEEDED" />
+      <xs:enumeration value="EXTERNAL_ACTION_FAILED" />
+      <xs:enumeration value="SYSTEM_CHANGE" />
+      <xs:enumeration value="POLICY_WARNING" />
+      <xs:enumeration value="EVENT" />
+      <xs:enumeration value="NOTIFICATION" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="historyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="POWER_CAP_REQUESTED" />
+      <xs:enumeration value="POWER_CAP_ACTUAL" />
+      <xs:enumeration value="THERMAL_TRIGGER" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

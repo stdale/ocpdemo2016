@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configurationSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-wcfconfigurationsnapshot">
+  <behaviors />
+  <bindings>
+    <binding digest="System.ServiceModel.Configuration.BasicHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;DcmPortBinding&quot;&gt;&lt;security mode=&quot;Transport&quot; /&gt;&lt;/Data&gt;" bindingType="basicHttpBinding" name="DcmPortBinding" />
+    <binding digest="System.ServiceModel.Configuration.BasicHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;DcmPortBinding1&quot; /&gt;" bindingType="basicHttpBinding" name="DcmPortBinding1" />
+  </bindings>
+  <endpoints>
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;https://fm2-dcm:8643/DCMService/services/Dcm.DcmPort/&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;DcmPortBinding&quot; contract=&quot;Dcm.Dcm&quot; name=&quot;DcmPort&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;https://fm2-dcm:8643/DCMService/services/Dcm.DcmPort/&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;DcmPortBinding&quot; contract=&quot;Dcm.Dcm&quot; name=&quot;DcmPort&quot; /&gt;" contractName="Dcm.Dcm" name="DcmPort" />
+  </endpoints>
+</configurationSnapshot>
