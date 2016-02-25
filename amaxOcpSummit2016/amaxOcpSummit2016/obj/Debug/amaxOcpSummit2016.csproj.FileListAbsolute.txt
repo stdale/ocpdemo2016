@@ -16,3 +16,6 @@ C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpS
 C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\bin\Debug\amaxOcpSummit2016.exe
 C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\bin\Debug\amaxOcpSummit2016.pdb
 C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\obj\Debug\amaxOcpSummit2016.frm_main.resources
+C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\bin\Debug\SnmpSharpNet.dll
+C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\bin\Debug\SnmpSharpNet.pdb
+C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\bin\Debug\SnmpSharpNet.xml

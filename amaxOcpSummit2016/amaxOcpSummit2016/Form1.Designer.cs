@@ -70,6 +70,12 @@
             this.btn_start = new System.Windows.Forms.Button();
             this.btn_stop = new System.Windows.Forms.Button();
             this.lblThreadStatus = new System.Windows.Forms.Label();
+            this.lb_log = new System.Windows.Forms.ListBox();
+            this.btn_snmpStart = new System.Windows.Forms.Button();
+            this.btn_snmpStop = new System.Windows.Forms.Button();
+            this.lbl_rackLimit = new System.Windows.Forms.Label();
+            this.tb_rackLimit = new System.Windows.Forms.TextBox();
+            this.btn_rackLimit = new System.Windows.Forms.Button();
             this.pnl_pdu.SuspendLayout();
             this.pnl_battTime.SuspendLayout();
             this.pnl_battCharge.SuspendLayout();
@@ -184,6 +190,9 @@
             // pnl_rack
             // 
             this.pnl_rack.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnl_rack.Controls.Add(this.btn_rackLimit);
+            this.pnl_rack.Controls.Add(this.tb_rackLimit);
+            this.pnl_rack.Controls.Add(this.lbl_rackLimit);
             this.pnl_rack.Controls.Add(this.pnl_srv6);
             this.pnl_rack.Controls.Add(this.pnl_srv5);
             this.pnl_rack.Controls.Add(this.pnl_srv4);
@@ -369,7 +378,7 @@
             this.pnl_rackPwr.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pnl_rackPwr.Controls.Add(this.lbl_rackPwr);
             this.pnl_rackPwr.Controls.Add(this.lbl_rackPwrTxt);
-            this.pnl_rackPwr.Location = new System.Drawing.Point(36, 22);
+            this.pnl_rackPwr.Location = new System.Drawing.Point(36, 5);
             this.pnl_rackPwr.Name = "pnl_rackPwr";
             this.pnl_rackPwr.Size = new System.Drawing.Size(141, 73);
             this.pnl_rackPwr.TabIndex = 0;
@@ -463,7 +472,7 @@
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(75, 23);
             this.btn_start.TabIndex = 9;
-            this.btn_start.Text = "Start";
+            this.btn_start.Text = "Start UI";
             this.btn_start.UseVisualStyleBackColor = true;
             this.btn_start.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -473,7 +482,7 @@
             this.btn_stop.Name = "btn_stop";
             this.btn_stop.Size = new System.Drawing.Size(75, 23);
             this.btn_stop.TabIndex = 10;
-            this.btn_stop.Text = "Stop";
+            this.btn_stop.Text = "Stop UI";
             this.btn_stop.UseVisualStyleBackColor = true;
             this.btn_stop.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -486,11 +495,69 @@
             this.lblThreadStatus.TabIndex = 11;
             this.lblThreadStatus.Text = "...";
             // 
+            // lb_log
+            // 
+            this.lb_log.FormattingEnabled = true;
+            this.lb_log.Location = new System.Drawing.Point(13, 523);
+            this.lb_log.MultiColumn = true;
+            this.lb_log.Name = "lb_log";
+            this.lb_log.Size = new System.Drawing.Size(463, 134);
+            this.lb_log.TabIndex = 12;
+            // 
+            // btn_snmpStart
+            // 
+            this.btn_snmpStart.Location = new System.Drawing.Point(407, 99);
+            this.btn_snmpStart.Name = "btn_snmpStart";
+            this.btn_snmpStart.Size = new System.Drawing.Size(75, 23);
+            this.btn_snmpStart.TabIndex = 13;
+            this.btn_snmpStart.Text = "start signal";
+            this.btn_snmpStart.UseVisualStyleBackColor = true;
+            this.btn_snmpStart.Click += new System.EventHandler(this.btn_snmpStart_Click);
+            // 
+            // btn_snmpStop
+            // 
+            this.btn_snmpStop.Location = new System.Drawing.Point(407, 129);
+            this.btn_snmpStop.Name = "btn_snmpStop";
+            this.btn_snmpStop.Size = new System.Drawing.Size(75, 23);
+            this.btn_snmpStop.TabIndex = 14;
+            this.btn_snmpStop.Text = "stop signal";
+            this.btn_snmpStop.UseVisualStyleBackColor = true;
+            this.btn_snmpStop.Click += new System.EventHandler(this.btn_snmpStop_Click);
+            // 
+            // lbl_rackLimit
+            // 
+            this.lbl_rackLimit.AutoSize = true;
+            this.lbl_rackLimit.Location = new System.Drawing.Point(16, 91);
+            this.lbl_rackLimit.Name = "lbl_rackLimit";
+            this.lbl_rackLimit.Size = new System.Drawing.Size(80, 13);
+            this.lbl_rackLimit.TabIndex = 7;
+            this.lbl_rackLimit.Text = "Apply rack limit:";
+            // 
+            // tb_rackLimit
+            // 
+            this.tb_rackLimit.Location = new System.Drawing.Point(94, 87);
+            this.tb_rackLimit.Name = "tb_rackLimit";
+            this.tb_rackLimit.Size = new System.Drawing.Size(31, 20);
+            this.tb_rackLimit.TabIndex = 8;
+            // 
+            // btn_rackLimit
+            // 
+            this.btn_rackLimit.Location = new System.Drawing.Point(132, 83);
+            this.btn_rackLimit.Name = "btn_rackLimit";
+            this.btn_rackLimit.Size = new System.Drawing.Size(75, 23);
+            this.btn_rackLimit.TabIndex = 9;
+            this.btn_rackLimit.Text = "Apply";
+            this.btn_rackLimit.UseVisualStyleBackColor = true;
+            this.btn_rackLimit.Click += new System.EventHandler(this.btn_rackLimit_Click);
+            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 531);
+            this.ClientSize = new System.Drawing.Size(491, 663);
+            this.Controls.Add(this.btn_snmpStop);
+            this.Controls.Add(this.btn_snmpStart);
+            this.Controls.Add(this.lb_log);
             this.Controls.Add(this.lblThreadStatus);
             this.Controls.Add(this.btn_stop);
             this.Controls.Add(this.btn_start);
@@ -511,6 +578,7 @@
             this.pnl_battStatus.ResumeLayout(false);
             this.pnl_battStatus.PerformLayout();
             this.pnl_rack.ResumeLayout(false);
+            this.pnl_rack.PerformLayout();
             this.pnl_srv6.ResumeLayout(false);
             this.pnl_srv6.PerformLayout();
             this.pnl_srv5.ResumeLayout(false);
@@ -578,6 +646,12 @@
         private System.Windows.Forms.Button btn_start;
         private System.Windows.Forms.Button btn_stop;
         private System.Windows.Forms.Label lblThreadStatus;
+        private System.Windows.Forms.ListBox lb_log;
+        private System.Windows.Forms.Button btn_snmpStart;
+        private System.Windows.Forms.Button btn_snmpStop;
+        private System.Windows.Forms.Button btn_rackLimit;
+        private System.Windows.Forms.TextBox tb_rackLimit;
+        private System.Windows.Forms.Label lbl_rackLimit;
     }
 }
 
