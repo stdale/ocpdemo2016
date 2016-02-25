@@ -36,7 +36,7 @@
             this.lbl_battChargeLvl = new System.Windows.Forms.Label();
             this.lbl_battChargeTxt = new System.Windows.Forms.Label();
             this.pnl_battStatus = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_battStatus = new System.Windows.Forms.Label();
             this.lbl_battStsText = new System.Windows.Forms.Label();
             this.pnl_rack = new System.Windows.Forms.Panel();
             this.pnl_srv6 = new System.Windows.Forms.Panel();
@@ -67,6 +67,9 @@
             this.tb_addy = new System.Windows.Forms.TextBox();
             this.lbl_notiTxt = new System.Windows.Forms.Label();
             this.btn_testNotf = new System.Windows.Forms.Button();
+            this.btn_start = new System.Windows.Forms.Button();
+            this.btn_stop = new System.Windows.Forms.Button();
+            this.lblThreadStatus = new System.Windows.Forms.Label();
             this.pnl_pdu.SuspendLayout();
             this.pnl_battTime.SuspendLayout();
             this.pnl_battCharge.SuspendLayout();
@@ -153,21 +156,21 @@
             // pnl_battStatus
             // 
             this.pnl_battStatus.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pnl_battStatus.Controls.Add(this.label1);
+            this.pnl_battStatus.Controls.Add(this.lbl_battStatus);
             this.pnl_battStatus.Controls.Add(this.lbl_battStsText);
             this.pnl_battStatus.Location = new System.Drawing.Point(39, 22);
             this.pnl_battStatus.Name = "pnl_battStatus";
             this.pnl_battStatus.Size = new System.Drawing.Size(131, 73);
             this.pnl_battStatus.TabIndex = 0;
             // 
-            // label1
+            // lbl_battStatus
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Off";
+            this.lbl_battStatus.AutoSize = true;
+            this.lbl_battStatus.Location = new System.Drawing.Point(44, 40);
+            this.lbl_battStatus.Name = "lbl_battStatus";
+            this.lbl_battStatus.Size = new System.Drawing.Size(40, 13);
+            this.lbl_battStatus.TabIndex = 1;
+            this.lbl_battStatus.Text = "Normal";
             // 
             // lbl_battStsText
             // 
@@ -454,11 +457,43 @@
             this.btn_testNotf.UseVisualStyleBackColor = true;
             this.btn_testNotf.Click += new System.EventHandler(this.btn_testNotf_Click);
             // 
+            // btn_start
+            // 
+            this.btn_start.Location = new System.Drawing.Point(407, 22);
+            this.btn_start.Name = "btn_start";
+            this.btn_start.Size = new System.Drawing.Size(75, 23);
+            this.btn_start.TabIndex = 9;
+            this.btn_start.Text = "Start";
+            this.btn_start.UseVisualStyleBackColor = true;
+            this.btn_start.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_stop
+            // 
+            this.btn_stop.Location = new System.Drawing.Point(407, 52);
+            this.btn_stop.Name = "btn_stop";
+            this.btn_stop.Size = new System.Drawing.Size(75, 23);
+            this.btn_stop.TabIndex = 10;
+            this.btn_stop.Text = "Stop";
+            this.btn_stop.UseVisualStyleBackColor = true;
+            this.btn_stop.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // lblThreadStatus
+            // 
+            this.lblThreadStatus.AutoSize = true;
+            this.lblThreadStatus.Location = new System.Drawing.Point(419, 82);
+            this.lblThreadStatus.Name = "lblThreadStatus";
+            this.lblThreadStatus.Size = new System.Drawing.Size(16, 13);
+            this.lblThreadStatus.TabIndex = 11;
+            this.lblThreadStatus.Text = "...";
+            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 531);
+            this.Controls.Add(this.lblThreadStatus);
+            this.Controls.Add(this.btn_stop);
+            this.Controls.Add(this.btn_start);
             this.Controls.Add(this.btn_testNotf);
             this.Controls.Add(this.lbl_notiTxt);
             this.Controls.Add(this.tb_addy);
@@ -505,7 +540,7 @@
         private System.Windows.Forms.Panel pnl_rack;
         private System.Windows.Forms.Panel pnl_status;
         private System.Windows.Forms.Panel pnl_battStatus;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_battStatus;
         private System.Windows.Forms.Label lbl_battStsText;
         private System.Windows.Forms.Panel pnl_battCharge;
         private System.Windows.Forms.Panel pnl_battTime;
@@ -540,6 +575,9 @@
         private System.Windows.Forms.TextBox tb_addy;
         private System.Windows.Forms.Label lbl_notiTxt;
         private System.Windows.Forms.Button btn_testNotf;
+        private System.Windows.Forms.Button btn_start;
+        private System.Windows.Forms.Button btn_stop;
+        private System.Windows.Forms.Label lblThreadStatus;
     }
 }
 
