@@ -39,6 +39,9 @@
             this.lbl_battStatus = new System.Windows.Forms.Label();
             this.lbl_battStsText = new System.Windows.Forms.Label();
             this.pnl_rack = new System.Windows.Forms.Panel();
+            this.btn_rackLimit = new System.Windows.Forms.Button();
+            this.tb_rackLimit = new System.Windows.Forms.TextBox();
+            this.lbl_rackLimit = new System.Windows.Forms.Label();
             this.pnl_srv6 = new System.Windows.Forms.Panel();
             this.lbl_srv6 = new System.Windows.Forms.Label();
             this.lbl_srv6Txt = new System.Windows.Forms.Label();
@@ -73,9 +76,7 @@
             this.lb_log = new System.Windows.Forms.ListBox();
             this.btn_snmpStart = new System.Windows.Forms.Button();
             this.btn_snmpStop = new System.Windows.Forms.Button();
-            this.lbl_rackLimit = new System.Windows.Forms.Label();
-            this.tb_rackLimit = new System.Windows.Forms.TextBox();
-            this.btn_rackLimit = new System.Windows.Forms.Button();
+            this.pb_ui = new System.Windows.Forms.ProgressBar();
             this.pnl_pdu.SuspendLayout();
             this.pnl_battTime.SuspendLayout();
             this.pnl_battCharge.SuspendLayout();
@@ -204,6 +205,32 @@
             this.pnl_rack.Name = "pnl_rack";
             this.pnl_rack.Size = new System.Drawing.Size(217, 359);
             this.pnl_rack.TabIndex = 1;
+            // 
+            // btn_rackLimit
+            // 
+            this.btn_rackLimit.Location = new System.Drawing.Point(132, 83);
+            this.btn_rackLimit.Name = "btn_rackLimit";
+            this.btn_rackLimit.Size = new System.Drawing.Size(75, 23);
+            this.btn_rackLimit.TabIndex = 9;
+            this.btn_rackLimit.Text = "Apply";
+            this.btn_rackLimit.UseVisualStyleBackColor = true;
+            this.btn_rackLimit.Click += new System.EventHandler(this.btn_rackLimit_Click);
+            // 
+            // tb_rackLimit
+            // 
+            this.tb_rackLimit.Location = new System.Drawing.Point(94, 87);
+            this.tb_rackLimit.Name = "tb_rackLimit";
+            this.tb_rackLimit.Size = new System.Drawing.Size(31, 20);
+            this.tb_rackLimit.TabIndex = 8;
+            // 
+            // lbl_rackLimit
+            // 
+            this.lbl_rackLimit.AutoSize = true;
+            this.lbl_rackLimit.Location = new System.Drawing.Point(16, 91);
+            this.lbl_rackLimit.Name = "lbl_rackLimit";
+            this.lbl_rackLimit.Size = new System.Drawing.Size(80, 13);
+            this.lbl_rackLimit.TabIndex = 7;
+            this.lbl_rackLimit.Text = "Apply rack limit:";
             // 
             // pnl_srv6
             // 
@@ -524,37 +551,19 @@
             this.btn_snmpStop.UseVisualStyleBackColor = true;
             this.btn_snmpStop.Click += new System.EventHandler(this.btn_snmpStop_Click);
             // 
-            // lbl_rackLimit
+            // pb_ui
             // 
-            this.lbl_rackLimit.AutoSize = true;
-            this.lbl_rackLimit.Location = new System.Drawing.Point(16, 91);
-            this.lbl_rackLimit.Name = "lbl_rackLimit";
-            this.lbl_rackLimit.Size = new System.Drawing.Size(80, 13);
-            this.lbl_rackLimit.TabIndex = 7;
-            this.lbl_rackLimit.Text = "Apply rack limit:";
-            // 
-            // tb_rackLimit
-            // 
-            this.tb_rackLimit.Location = new System.Drawing.Point(94, 87);
-            this.tb_rackLimit.Name = "tb_rackLimit";
-            this.tb_rackLimit.Size = new System.Drawing.Size(31, 20);
-            this.tb_rackLimit.TabIndex = 8;
-            // 
-            // btn_rackLimit
-            // 
-            this.btn_rackLimit.Location = new System.Drawing.Point(132, 83);
-            this.btn_rackLimit.Name = "btn_rackLimit";
-            this.btn_rackLimit.Size = new System.Drawing.Size(75, 23);
-            this.btn_rackLimit.TabIndex = 9;
-            this.btn_rackLimit.Text = "Apply";
-            this.btn_rackLimit.UseVisualStyleBackColor = true;
-            this.btn_rackLimit.Click += new System.EventHandler(this.btn_rackLimit_Click);
+            this.pb_ui.Location = new System.Drawing.Point(13, 664);
+            this.pb_ui.Name = "pb_ui";
+            this.pb_ui.Size = new System.Drawing.Size(463, 23);
+            this.pb_ui.TabIndex = 15;
             // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 663);
+            this.ClientSize = new System.Drawing.Size(491, 695);
+            this.Controls.Add(this.pb_ui);
             this.Controls.Add(this.btn_snmpStop);
             this.Controls.Add(this.btn_snmpStart);
             this.Controls.Add(this.lb_log);
@@ -652,6 +661,7 @@
         private System.Windows.Forms.Button btn_rackLimit;
         private System.Windows.Forms.TextBox tb_rackLimit;
         private System.Windows.Forms.Label lbl_rackLimit;
+        private System.Windows.Forms.ProgressBar pb_ui;
     }
 }
 

@@ -10,7 +10,6 @@ C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\amaxOcpSummit2016\am
 C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\bin\Debug\amaxOcpSummit2016.exe.config
 C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\obj\Debug\amaxOcpSummit2016.exe
 C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\obj\Debug\amaxOcpSummit2016.pdb
-C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\obj\Debug\amaxOcpSummit2016.csprojResolveAssemblyReference.cache
 C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\obj\Debug\amaxOcpSummit2016.Properties.Resources.resources
 C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\obj\Debug\amaxOcpSummit2016.csproj.GenerateResource.Cache
 C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\bin\Debug\amaxOcpSummit2016.exe

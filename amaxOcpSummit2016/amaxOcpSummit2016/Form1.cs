@@ -70,13 +70,15 @@ namespace amaxOcpSummit2016
             dcmClient = new Dcm.DcmClient();
             string ver = dcmClient.getVersion();
 
-            bwUI.WorkerReportsProgress = false;
+            bwUI.WorkerReportsProgress = true;
             bwUI.WorkerSupportsCancellation = true;
             bwUI.DoWork += new DoWorkEventHandler(bw_DoWorkUI);
+            bwUI.ProgressChanged += new ProgressChangedEventHandler(bw_ProgressChanged);
             bwSNMP.WorkerReportsProgress = false;
             bwSNMP.WorkerSupportsCancellation = true;
             bwSNMP.DoWork += new DoWorkEventHandler(bw_DoWorkSNMP);
             MessageBox.Show(ver);
+            pb_ui.Value = 0;
         }
 
         #region UI Thread code
@@ -227,38 +229,7 @@ namespace amaxOcpSummit2016
                 return;
             }
             int packetVersion = SnmpPacket.GetProtocolVersion(_inbuffer, inlen);
-            /*
-            if (packetVersion == (int)SnmpVersion.Ver1)
-            {
-                SnmpV1TrapPacket pkt = new SnmpV1TrapPacket();
-                try
-                {
-                    pkt.decode(_inbuffer, inlen);
-                }
-                catch (System.Exception ex)
-                {
-                    PostAsyncMessage("Error parsing SNMPv1 Trap: " + ex.Message);
-                    pkt = null;
-                }
-                if (pkt != null)
-                {
-                    PostAsyncMessage(String.Format("** SNMPv1 TRAP from {0}", _peerIP.ToString()));
-                    PostAsyncMessage(
-                        String.Format("*** community {0} generic id: {1} specific id: {2}",
-                            pkt.Community, pkt.Pdu.Generic, pkt.Pdu.Specific)
-                    );
-                    PostAsyncMessage(String.Format("*** PDU count: {0}", pkt.Pdu.VbCount));
-                    foreach (Vb vb in pkt.Pdu.VbList)
-                    {
-                        PostAsyncMessage(
-                            String.Format("**** Vb oid: {0} type: {1} value: {2}",
-                                vb.Oid.ToString(), SnmpConstants.GetTypeName(vb.Value.Type), vb.Value.ToString())
-                        );
-                    }
-                    PostAsyncMessage("** End of SNMPv1 TRAP");
-                }
-            }
-            else*/
+  
             if (packetVersion == (int)SnmpVersion.Ver2)  {
                 SnmpV2Packet pkt = new SnmpV2Packet();
                 try  {
@@ -273,15 +244,6 @@ namespace amaxOcpSummit2016
                     if (pkt.Pdu.Type == PduType.V2Trap) {
                         PostAsyncMessage(String.Format("** SNMPv2 TRAP from {0}", _peerIP.ToString()));
                     }
-                    /* we only want traps
-                    else if (pkt.Pdu.Type == PduType.Inform)  {
-                        PostAsyncMessage(String.Format("** SNMPv2 INFORM from {0}", _peerIP.ToString()));
-                    }
-                    else {
-                        PostAsyncMessage(String.Format("Invalid SNMPv2 packet from {0}", _peerIP.ToString()));
-                        pkt = null;
-                    }
-                    */
                     if (pkt != null)    {
                         /*PostAsyncMessage(
                             String.Format("*** community {0} sysUpTime: {1} trapObjectID: {2}",
@@ -300,19 +262,13 @@ namespace amaxOcpSummit2016
                                 PostAsyncMessage(
                                 String.Format("**** Got our message oid: {0} type: {1} value: {2}",
                                     vb.Oid.ToString(), SnmpConstants.GetTypeName(vb.Value.Type), vb.Value.ToString()));
+                                SetText(this, lbl_extPwr, "Off");
+                                SetColor(this, pnl_extPwr, Color.Red);
                                 //updateActiveCap(true);
                             }
                         }
                         if (pkt.Pdu.Type == PduType.V2Trap)
                             PostAsyncMessage("** End of SNMPv2 TRAP");
-                        /*else {
-                            PostAsyncMessage("** End of SNMPv2 INFORM");
-
-                            // send ACK back to the INFORM sender
-                            SnmpV2Packet response = pkt.BuildInformResponse();
-                            byte[] buf = response.encode();
-                            _socket.SendTo(buf, (EndPoint)_peerIP);
-                        }*/
                     }
                 }
             }
@@ -387,7 +343,7 @@ namespace amaxOcpSummit2016
                     SetText(this, lbl_srv5, data.value.ToString() + " w");
                     data = dcmClient.getLatestQueryData(srvEntId[5], queryType.TOTAL_AVG_PWR);
                     SetText(this, lbl_srv6, data.value.ToString() + " w");
-                    try {
+                    /*try {
                         realTimeUpsData upsData = dcmClient.getRealTimeUpsData(upsEntId);
                         SetText(this, lbl_battChargeLvl, upsData.UPSEstimatedChargeRemaining.ToString() + "%");
                         SetText(this, lbl_battTime, upsData.UPSEstimatedMinutesRemaining.ToString() + " minutes");
@@ -422,15 +378,25 @@ namespace amaxOcpSummit2016
                     catch(System.Exception ex)
                     {
                         int iii = 1 + 1;
-                    }
+                    }*/
                     Application.DoEvents();
                     SetText(this, lblThreadStatus, "sleeping...");
                     Application.DoEvents();
-                    System.Threading.Thread.Sleep(10000);
-                    
+                    for (int i = 0; i <= 100; i++)
+                    {
+                        worker.ReportProgress(i);
+                        System.Threading.Thread.Sleep(300);
+                    }
                 }
             }
         }
+        private void bw_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+ 
+            pb_ui.Value= e.ProgressPercentage;
+
+        }
+
         #endregion
 
 
