@@ -18,3 +18,4 @@ C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpS
 C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\bin\Debug\SnmpSharpNet.dll
 C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\bin\Debug\SnmpSharpNet.pdb
 C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\bin\Debug\SnmpSharpNet.xml
+C:\Users\stewartt\Documents\Working\DCM\customers\amax\demo\ocpdemo2016\amaxOcpSummit2016\amaxOcpSummit2016\obj\Debug\amaxOcpSummit2016.csprojResolveAssemblyReference.cache

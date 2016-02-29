@@ -256,15 +256,23 @@ namespace amaxOcpSummit2016
                                     vb.Oid.ToString(), SnmpConstants.GetTypeName(vb.Value.Type), vb.Value.ToString())
                             );*/
                             if(vb.Oid.ToString() == "1.3.6.1.4.1.6302.3.1.46.2" ||
-                               vb.Oid.ToString() == "1.3.6.1.4.1.6302.3.1.42.2 ")
+                               vb.Oid.ToString() == "1.3.6.1.4.1.6302.3.1.42.2")
                             {
                                 // we caught the trap and foudn the one we awnt... do the business
                                 PostAsyncMessage(
-                                String.Format("**** Got our message oid: {0} type: {1} value: {2}",
+                                String.Format("**** Got AC FAIL trap -> oid: {0} type: {1} value: {2}",
                                     vb.Oid.ToString(), SnmpConstants.GetTypeName(vb.Value.Type), vb.Value.ToString()));
                                 SetText(this, lbl_extPwr, "Off");
                                 SetColor(this, pnl_extPwr, Color.Red);
                                 //updateActiveCap(true);
+                            }else if(vb.Oid.ToString() == "1.3.6.1.4.1.6302.3.1.42.3")
+                            {
+                                PostAsyncMessage(
+                                String.Format("**** Got AC RETURN Trap -> oid: {0} type: {1} value: {2}",
+                                    vb.Oid.ToString(), SnmpConstants.GetTypeName(vb.Value.Type), vb.Value.ToString()));
+                                SetText(this, lbl_extPwr, "On");
+                                SetColor(this, pnl_extPwr, Color.Lime);
+                                //updateActiveCap(false);
                             }
                         }
                         if (pkt.Pdu.Type == PduType.V2Trap)
