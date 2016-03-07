@@ -351,7 +351,7 @@ namespace amaxOcpSummit2016
                     SetText(this, lbl_srv5, data.value.ToString() + " w");
                     data = dcmClient.getLatestQueryData(srvEntId[5], queryType.TOTAL_AVG_PWR);
                     SetText(this, lbl_srv6, data.value.ToString() + " w");
-                    /*try {
+                    try {
                         realTimeUpsData upsData = dcmClient.getRealTimeUpsData(upsEntId);
                         SetText(this, lbl_battChargeLvl, upsData.UPSEstimatedChargeRemaining.ToString() + "%");
                         SetText(this, lbl_battTime, upsData.UPSEstimatedMinutesRemaining.ToString() + " minutes");
@@ -386,7 +386,7 @@ namespace amaxOcpSummit2016
                     catch(System.Exception ex)
                     {
                         int iii = 1 + 1;
-                    }*/
+                    }
                     Application.DoEvents();
                     SetText(this, lblThreadStatus, "sleeping...");
                     Application.DoEvents();
@@ -520,11 +520,13 @@ namespace amaxOcpSummit2016
                 int rackLimit = Int32.Parse(tb_rackLimit.Text);              
                 btn_rackLimit.Text = "Remove";
                 capApplied = true;
+                updateActiveCap(capApplied);
             }
             else
             {
                 btn_rackLimit.Text = "Apply";
-                capApplied = true;
+                capApplied = false;
+                updateActiveCap(capApplied);
             }
         }
     }
