@@ -264,7 +264,7 @@ namespace amaxOcpSummit2016
                                     vb.Oid.ToString(), SnmpConstants.GetTypeName(vb.Value.Type), vb.Value.ToString()));
                                 SetText(this, lbl_extPwr, "Off");
                                 SetColor(this, pnl_extPwr, Color.Red);
-                                //updateActiveCap(true);
+                                updateActiveCap(true);
                             }else if(vb.Oid.ToString() == "1.3.6.1.4.1.6302.3.1.42.3")
                             {
                                 PostAsyncMessage(
@@ -272,7 +272,7 @@ namespace amaxOcpSummit2016
                                     vb.Oid.ToString(), SnmpConstants.GetTypeName(vb.Value.Type), vb.Value.ToString()));
                                 SetText(this, lbl_extPwr, "On");
                                 SetColor(this, pnl_extPwr, Color.Lime);
-                                //updateActiveCap(false);
+                                updateActiveCap(false);
                             }
                         }
                         if (pkt.Pdu.Type == PduType.V2Trap)
