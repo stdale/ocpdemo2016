@@ -489,7 +489,7 @@
             this.btn_testNotf.Name = "btn_testNotf";
             this.btn_testNotf.Size = new System.Drawing.Size(75, 19);
             this.btn_testNotf.TabIndex = 8;
-            this.btn_testNotf.Text = "test";
+            this.btn_testNotf.Text = "save";
             this.btn_testNotf.UseVisualStyleBackColor = true;
             this.btn_testNotf.Click += new System.EventHandler(this.btn_testNotf_Click);
             // 

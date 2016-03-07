@@ -33,7 +33,7 @@ namespace amaxOcpSummit2016
         Dcm.DcmClient dcmClient;
         string dcmSrvAddy;
 
-
+        List<string> phoneNumbers = new List<string>();
         int rackEntId;
         int[] srvEntId = new int[6];
         int upsEntId;
@@ -475,6 +475,7 @@ namespace amaxOcpSummit2016
         private void btn_testNotf_Click(object sender, EventArgs e)
         {
             string addy = tb_addy.Text;
+            phoneNumbers.Add(addy);
             sendEmailAsText(addy, "recieved battery offline notification");
         }
 
